@@ -1,0 +1,234 @@
+:root {
+    --background-color: #feefe3;
+    --primary-color: #ed9b59;
+    --dark-color: #1a1d32;
+    --grey-color: #7d8790;
+    --text-color: #fff;
+    --brown-color: #b25e21;
+}
+
+.header-section {
+    background-color: var(--dark-color);
+}
+
+.header-section img {
+    width: 80px;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}
+
+.contact {
+    color: var(--dark-color);
+    font-size: clamp(16px, 4vw, 32px);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+
+.myphoto {
+    border-radius: 50%;
+}
+
+.my-photo {
+    border-radius: 50%;
+    width: 200px;
+    margin-top: -100px;
+}
+
+.hero {
+    background-image: url("images/background.png");
+}
+
+.about-me {
+    color: var(--text-color);
+    background-color: var(--dark-color);
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.my-name {
+    color: var(--text-color);
+    height: 245px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.my-name h3 {
+    color: var(--primary-color);
+}
+
+.my-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+.more-info {
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.more-info h3 {
+    margin: 0;
+}
+
+.more-info:hover {
+    box-shadow: 1px 1px 3px 0px var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--dark-color);
+}
+
+
+.info-section {
+    display: none;
+}
+
+.info-section.active {
+    display: flex;
+}
+
+
+.info-image {
+    width: 90%;
+}
+
+.more-info-row h3 {
+    font-size: 3vw;
+
+}
+
+.more-info-row a {
+    text-decoration: none;
+}
+
+.more-info-row a:hover {
+    text-decoration: none;
+}
+
+.git-section {
+    align-items: center;
+    color: var(--text-color);
+}
+
+.git-section-row {
+    color: var(--text-color);
+}
+
+.git-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.work-and-school-section img {
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.btn-card {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.btn-card:hover {
+    color: var(--text-color);
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 3px var(--primary-color);
+}
+
+.school-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section {
+    background-color: #eaedf2;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.horizontal-list li {
+    display: inline;
+}
+
+.my-links li+li::before {
+    content: " | ";
+}
+
+.horizontal-list a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.horizontal-list a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+.socials i {
+    padding: 0 10px;
+    color: var(--dark-color);
+    font-size: 3vw;
+}
+
+.socials i:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.programming-section {
+    background-color: var(--dark-color);
+
+}
+
+.btn-check {
+    display: none;
+    border-radius: 10px;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary.active,
+.btn-outline-primary:focus {
+    background-color: var(--dark-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-one {
+    border-radius: 50%;
+}
