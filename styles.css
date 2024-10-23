@@ -75,13 +75,28 @@ button {
 .hero {
     background-image: url("images/background.png");
 }
-
+.hero {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns children in a column */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    height: calc(100vh - /* height of your header */ 56px); /* Adjust based on your header height */
+    background-color: #f8f9fa; /* Optional: add a background color */
+}
 .about-me {
     color: var(--text-color);
     background-color: var(--dark-color);
-    height: 350px;
     border-radius: 10px;
     margin-top: 100px;
+}
+
+
+.about-me {
+    height: 50vh; /* Set height to 50% of viewport */
+    display: flex; /* Enables flexbox for .about-me section */
+    flex-direction: column; /* Aligns children in a column */
+    justify-content: center; /* Centers items vertically within the about-me section */
+    align-items: center; /* Centers items horizontally */
 }
 
 .my-name {
@@ -226,7 +241,7 @@ button {
 .socials i {
     padding: 0 10px;
     color: var(--dark-color);
-    font-size: 3vw;
+    font-size: clamp(24px, 2vw + 4px, 30px);
 }
 
 .socials i:hover {
@@ -270,9 +285,5 @@ button {
 
 p {
     font-size: clamp(12px, 2vw + 2px, 16px);
-    /* Dynamic font size with a max of 16px */
     overflow-wrap: break-word;
-    /* Ensure long words break */
-
-
 }
