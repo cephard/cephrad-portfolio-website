@@ -6,3 +6,4 @@ function showInfo(index) {
     // Show the selected section
     document.getElementById('info-' + index).style.display = 'flex';
 }
+

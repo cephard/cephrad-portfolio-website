@@ -58,16 +58,18 @@ button {
     font-size: clamp(16px, 4vw, 32px);
     background-color: var(--primary-color);
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .contact:hover {
     background-color: var(--dark-color);
     color: var(--primary-color);
+    box-shadow: 1px 1px 10px 0px var(--primary-color);
+    transform: scale(1.05);
 }
 
-.contact a:hover {
-    color: var(--primary-color);
-}
+
 
 .contact a {
     color: var(--dark-color);
@@ -99,21 +101,13 @@ button {
     background-color: var(--dark-color);
     border-radius: 10px;
     margin-top: 100px;
-}
-
-
-.about-me {
     height: 50vh;
-    /* Set height to 50% of viewport */
     display: flex;
-    /* Enables flexbox for .about-me section */
     flex-direction: column;
-    /* Aligns children in a column */
     justify-content: center;
-    /* Centers items vertically within the about-me section */
     align-items: center;
-    /* Centers items horizontally */
 }
+
 
 .my-name {
     color: var(--text-color);
