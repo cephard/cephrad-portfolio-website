@@ -74,15 +74,14 @@ button {
 
 .hero {
     background-image: url("images/background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px);
+    background-color: #f8f9fa;
 }
-.hero {
-    display: flex; /* Enables flexbox */
-    flex-direction: column; /* Aligns children in a column */
-    justify-content: center; /* Centers items vertically */
-    align-items: center; /* Centers items horizontally */
-    height: calc(100vh - /* height of your header */ 56px); /* Adjust based on your header height */
-    background-color: #f8f9fa; /* Optional: add a background color */
-}
+
 .about-me {
     color: var(--text-color);
     background-color: var(--dark-color);
@@ -92,11 +91,16 @@ button {
 
 
 .about-me {
-    height: 50vh; /* Set height to 50% of viewport */
-    display: flex; /* Enables flexbox for .about-me section */
-    flex-direction: column; /* Aligns children in a column */
-    justify-content: center; /* Centers items vertically within the about-me section */
-    align-items: center; /* Centers items horizontally */
+    height: 50vh;
+    /* Set height to 50% of viewport */
+    display: flex;
+    /* Enables flexbox for .about-me section */
+    flex-direction: column;
+    /* Aligns children in a column */
+    justify-content: center;
+    /* Centers items vertically within the about-me section */
+    align-items: center;
+    /* Centers items horizontally */
 }
 
 .my-name {
@@ -109,6 +113,8 @@ button {
     width: 100%;
 }
 
+.my-name h1,
+.my-name h2,
 .my-name h3 {
     color: var(--primary-color);
 }
@@ -202,6 +208,19 @@ button {
     background-color: var(--dark-color);
     box-shadow: 0 2px 3px var(--primary-color);
 }
+
+.inner-school-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Smooth transitions */
+}
+
+.inner-school-card:hover {
+    transform: scale(1.05);
+    /* Slightly zoom in (adjust value as needed) */
+    box-shadow: 1px 1px 10px 0px var(--primary-color);
+    /* Increase the shadow on hover */
+}
+
 
 .school-card img {
     width: 100%;
