@@ -60,6 +60,18 @@ button {
     border-radius: 10px;
 }
 
+.contact:hover {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+.contact a:hover {
+    color: var(--primary-color);
+}
+
+.contact a {
+    color: var(--dark-color);
+}
 
 .myphoto {
     border-radius: 50%;
