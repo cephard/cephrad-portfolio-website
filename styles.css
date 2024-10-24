@@ -200,6 +200,11 @@ button {
     color: var(--text-color);
 }
 
+.git-section hr {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
 .work-section {}
 
 .card img {
