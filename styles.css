@@ -220,7 +220,8 @@ button {
     box-shadow: 0 2px 3px var(--primary-color);
 }
 
-.inner-school-card {
+
+.inner-school-card, .inner-work-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     /* Smooth transitions */
 }
@@ -230,6 +231,11 @@ button {
     /* Slightly zoom in (adjust value as needed) */
     box-shadow: 1px 1px 10px 0px var(--primary-color);
     /* Increase the shadow on hover */
+}
+
+.inner-work-card:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 10px 0px var(--primary-color);
 }
 
 
