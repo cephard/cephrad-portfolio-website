@@ -1,7 +1,8 @@
 :root {
-    --background-color: #feefe3;
-    --primary-color: #ed9b59;
-    --dark-color: #1a1d32;
+    --background-color: #4d4d4d;
+    ;
+    --primary-color: #ff9a1f;
+    --dark-color: #4d4d4d;
     --grey-color: #7d8790;
     --text-color: #fff;
     --brown-color: #b25e21;
@@ -19,13 +20,33 @@ body {
     width: 100%;
 }
 
+
+body {
+    background: linear-gradient(135deg, #d1d1d1, #e2e2e2);
+    /* Light silver gradient for depth */
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    /* White background for the content */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+}
+
+h1 {
+    color: #333333;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+    /* Slight text shadow for depth */
+}
+
+
 button {
     width: 100%;
-    /* Makes the button take up full available space */
     max-width: 200px;
-    /* Ensures the button does not exceed 200px */
     padding: 10px;
-    /* Padding for the button */
 }
 
 .header-section {
@@ -43,13 +64,9 @@ button {
 
 .navbar-toggler {
     padding: 0.25rem 0.5rem;
-    /* Adjust padding */
     font-size: 1.25rem;
-    /* Adjust font size */
     height: auto;
-    /* Set height to auto */
     width: auto;
-    /* Set width to auto */
 }
 
 
@@ -180,22 +197,14 @@ button {
 }
 
 
-.git-section {
-    background: linear-gradient(145deg, #15171f, #0e0f14); /* Darker gradient */
-    padding: 2rem;
-    border-radius: 12px;
-}
-
-/* Optional: Subtle Inner Shadow */
-.git-section {
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6); /* Adds depth to the container */
-}
 
 
 
-.abilities i{
+
+.abilities i {
     color: white;
-    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 4rem); /* Responsive font size for icons */
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 4rem);
+    /* Responsive font size for icons */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -203,12 +212,12 @@ button {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.abilities h5{
+.abilities h5 {
     color: white;
 }
 
 .abilities .card img {
-    filter: blur(3px) brightness(0.5); 
+    filter: blur(3px) brightness(0.5);
     transition: all 0.3s ease-in-out;
 
 }
@@ -217,13 +226,13 @@ button {
     filter: blur(0px) brightness(1);
 }
 
-#designImg{
-    border-radius: 8px 8px 0 0; 
+#designImg {
+    border-radius: 8px 8px 0 0;
 
 }
 
-#errorImg{
-    border-radius: 0 0 8px 8px; 
+#errorImg {
+    border-radius: 0 0 8px 8px;
 
 }
 
@@ -233,18 +242,21 @@ button {
 
 /* General Container Styles */
 .info-sections {
-    padding: clamp(1rem, 2vw, 4rem); /* Adjust padding based on viewport */
+    padding: clamp(1rem, 2vw, 4rem);
+    /* Adjust padding based on viewport */
 }
 
 /* Heading Styling */
 .info-section h3 {
-    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem); /* Responsive font-size */
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    /* Responsive font-size */
     margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
 
 /* Paragraph Styling */
 .info-section p {
-    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem); /* Responsive text for paragraphs */
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+    /* Responsive text for paragraphs */
     color: #555;
     line-height: 1.6;
 }
@@ -259,18 +271,21 @@ button {
 
 /* Card Section Styling */
 .abilities h1 {
-    font-size: clamp(2rem, 3vw + 1rem, 4rem); /* Responsive heading for section title */
+    font-size: clamp(2rem, 3vw + 1rem, 4rem);
+    /* Responsive heading for section title */
     color: #fff;
     margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
 .abilities .card-title {
-    font-size: clamp(1.2rem, 2vw + 0.5rem, 2rem); /* Responsive title in card */
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 2rem);
+    /* Responsive title in card */
     font-weight: 600;
 }
 
 .abilities .card-text {
-    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem); /* Responsive text in card */
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+    /* Responsive text in card */
     color: #777;
     margin-top: 0.5rem;
     line-height: 1.5;
@@ -279,12 +294,18 @@ button {
 
 /* Card Styling */
 .abilities .card {
-   background-color: #1a1d32;
+    background-color: #4d4d4d;
+    /* Lighter gray for the card */
+    color: #f0f0f0;
+    /* Light text for contrast */
     border: none;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 
 .abilities .card:hover {
     transform: translateY(-5px);
@@ -316,6 +337,10 @@ button {
 .git-section {
     align-items: center;
     color: var(--text-color);
+    background-color: #333333;
+    /* Dark card background */
+    color: #f0f0f0;
+    /* Light text for contrast */
 }
 
 .git-section-row {
@@ -327,13 +352,16 @@ button {
     color: var(--text-color);
 }
 
-.git-section hr {
+.git-section hr, .small-intro-section hr {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
+
 .bg-dark img {
-    border-image: linear-gradient(#000, #222) 1; /* Darker gradient */
-    border-image-slice: 1; /* Adjust slice to cover more area */
+    border-image: linear-gradient(#000, #222) 1;
+    /* Darker gradient */
+    border-image-slice: 1;
+    /* Adjust slice to cover more area */
 }
 
 .card img {
@@ -356,27 +384,32 @@ button {
 }
 
 
-.inner-school-card, .inner-work-card {
+.inner-school-card,
+.inner-work-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    /* Smooth transitions */
 }
 
 .inner-school-card:hover {
     transform: scale(1.05);
-    /* Slightly zoom in (adjust value as needed) */
     box-shadow: 1px 1px 10px 0px var(--primary-color);
-    /* Increase the shadow on hover */
 }
 
-.inner-work-card:hover{
+.inner-work-card:hover {
     transform: translateY(-20px);
     box-shadow: 1px 1px 10px 0px var(--primary-color);
 }
 
+.inner-work-card img {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
 
-.school-card img, .school-card img {
- object-fit: cover;
- height: 100%;
+}
+
+
+.school-card img{
+    object-fit: cover;
+    height: 100%;
 }
 
 .footer-section {
@@ -461,10 +494,10 @@ p {
 
 
 
-.Carousel, .carousel-inner{
-    height: 500px;;
+.Carousel,
+.carousel-inner {
+    height: 500px;
+    ;
 }
 
-.carousel-inner img{
-
-}
+.carousel-inner img {}
