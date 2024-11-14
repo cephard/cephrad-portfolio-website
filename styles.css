@@ -1,6 +1,5 @@
 :root {
     --background-color: #4d4d4d;
-    ;
     --primary-color: #ff9a1f;
     --dark-color: #4d4d4d;
     --grey-color: #7d8790;
@@ -236,10 +235,6 @@ button {
 
 }
 
-
-
-
-
 /* General Container Styles */
 .info-sections {
     padding: clamp(1rem, 2vw, 4rem);
@@ -291,7 +286,6 @@ button {
     line-height: 1.5;
 }
 
-
 /* Card Styling */
 .abilities .card {
     background-color: #4d4d4d;
@@ -304,8 +298,6 @@ button {
     /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .abilities .card:hover {
     transform: translateY(-5px);
@@ -334,7 +326,7 @@ button {
 
 
 
-.git-section {
+.git-section{
     align-items: center;
     color: var(--text-color);
     background-color: #333333;

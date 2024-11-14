@@ -136,28 +136,35 @@
 	</section>
 
 
-	<section class="pb-5">
-		<div class="container">
-			<!-- Carousel Navigation -->
-			<div class="row pt-2 pb-2 align-items-center more-info-row">
-				<div class="col-12">
-					<div class="btn-group my-btn-group" role="group" aria-label="Basic radio toggle button group">
-						<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-						<label class="btn btn-outline-primary" for="btnradio1" onclick="showInfo(0)">Projects</label>
+	<section class="pb-5 projects">
+		<!-- Carousel Navigation -->
+		<div class="container-fluid pt-2" style="background-color: #4d4d4d;">
+			<div class="container">
+				<div class="row align-items-center more-info-row">
+					<div class="col-12">
+						<div class="btn-group my-btn-group" role="group" aria-label="Basic radio toggle button group">
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+								checked>
+							<label class="btn btn-outline-primary" for="btnradio1"
+								onclick="showInfo(0)">Projects</label>
 
-						<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-						<label class="btn btn-outline-primary" for="btnradio2" onclick="showInfo(1)">Frameworks</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+							<label class="btn btn-outline-primary" for="btnradio2"
+								onclick="showInfo(1)">Frameworks</label>
 
-						<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-						<label class="btn btn-outline-primary" for="btnradio3" onclick="showInfo(2)">Skills</label>
-						<!--
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+							<label class="btn btn-outline-primary" for="btnradio3" onclick="showInfo(2)">Skills</label>
+							<!--
 						<input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
 						<label class="btn btn-outline-primary" for="btnradio4" onclick="showInfo(3)">Hobbies</label>
 						-->
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="container">
 			<!-- Content Sections -->
 			<div class="info-sections">
 				<div class="row pt-4 info-section" id="info-0" style="display: flex;">
@@ -176,7 +183,10 @@
 						<p>Unity | Scenebuilder | Javafx | SQLite | PlayFab | JDBC | Bootstrap</p>
 					</div>
 					<div class="col-md-6">
-						<img src="images/elgon.jpg" alt="" class="info-image">
+						<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/unity.png" alt="unity" />
+
+						<img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png"
+							alt="bootstrap" />
 					</div>
 				</div>
 
@@ -188,107 +198,21 @@
 						<p>Html | CSS | FXML</p>
 					</div>
 					<div class="col-md-6">
-						<img src="images/jooust.jpg" alt="" class="info-image">
+						<img src="images/csharp.png" alt="">
+						<img width="48" height="48" src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png"
+							alt="java-coffee-cup-logo" />
 					</div>
 				</div>
 
 				<div class="row pt-4 info-section" id="info-3" style="display: none;">
 					<div class="col-md-6">
 						<h3>Hobbies</h3>
-						<p>Singing | Making Music</p>
 					</div>
 					<div class="col-md-6">
+						<p>Singing | Making Music</p>
+
 						<img src="images/background.png" alt="" class="info-image">
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="git-section container-fluid pt-4 pb-2">
-		<div class="container abilities">
-			<div class="row text-center pb-4 pt-4">
-				<div class="col-12 text-center pb-4">
-					<h1 class="text-white">What I Can Do</h1>
-				</div>
-
-				<!-- Left Column -->
-				<div class="col-md-7 card">
-					<div class="card-body">
-						<i class="fa-regular fa-pen-to-square"></i>
-						<h5 class="card-title">Design Software Solutions</h5>
-						<p class="card-text text-muted">Crafting tailored software solutions to meet diverse
-							business needs.</p>
-					</div>
-					<img id="designImg" src="images/UML.png" alt="">
-				</div>
-
-				<!-- Right Column -->
-				<div class="col-md-5">
-					<div class="card mb-4">
-						<div class="card-body">
-							<i class="fa-regular fa-keyboard"></i>
-							<h5 class="card-title">Write and Maintain Code</h5>
-							<p class="card-text text-muted">Developing and optimizing code for functionality and
-								efficiency.</p>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-body">
-							<i class="fa-solid fa-bug"></i>
-							<h5 class="card-title">Troubleshoot and Debug</h5>
-							<p class="card-text text-muted">Diagnosing and resolving software issues efficiently.</p>
-						</div>
-						<img id="errorImg" src="images/error.png" alt="">
-					</div>
-				</div>
-			</div>
-
-			<!-- Bottom row-->
-			<div>
-				<div class="row text-center pb-4">
-					<div class="col-lg-3">
-						<div class="card">
-							<div class="card-body">
-								<i class="fa-solid fa-check"></i>
-								<h5 class="card-title">Unit Tests</h5>
-								<p class="card-text text-muted">Ensuring code reliability through comprehensive unit
-									testing.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-9">
-						<div class="card ">
-							<div class="card-body">
-								<i class="fa-solid fa-check"></i>
-								<h5 class="card-title">Unit Tests</h5>
-								<p class="card-text text-muted">Ensuring code reliability through comprehensive unit
-									testing.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- GitHub Section -->
-		<div class="row git-section align-items-center pb-5">
-
-			<div class="container">
-				<div class="col-12">
-					<hr>
-				</div>
-				<div class="col-md-8 text-white">
-					<h3>Want to try out the projects?</h3>
-					<p>You can find the source code of the projects on my GitHub page.</p>
-				</div>
-				<div class="col-md-4 text-end">
-					<a href="https://github.com/cephard">
-						<button class="btn git-btn">Open GitHub <i class="fa-solid fa-arrow-right-long"></i></button>
-					</a>
 				</div>
 			</div>
 		</div>
@@ -311,7 +235,6 @@
 							<h5 class="card-title">Kip's Communication</h5>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk
 								of the card's content.</p>
-							<a href="#" class="btn btn-card">Go somewhere</a>
 						</div>
 					</div>
 				</div>
@@ -323,7 +246,6 @@
 							<h5 class="card-title">IEBC</h5>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk
 								of the card's content.</p>
-							<a href="#" class="btn btn-card">Go somewhere</a>
 						</div>
 					</div>
 				</div>
@@ -335,7 +257,6 @@
 							<h5 class="card-title">Trans Nzoai County Assembly</h5>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk
 								of the card's content.</p>
-							<a href="#" class="btn btn-card">Go somewhere</a>
 						</div>
 					</div>
 				</div>
@@ -395,13 +316,10 @@
 					</div>
 				</div>
 
-
-
-
-				<div class="col-lg-6 school-card pt-4">
+				<div class="col-lg-6 school-card">
 					<div class="row g-0">
-						<div class="col-md-6 col-lg-6">
-							<div class="card inner-work-card h-100">
+						<div class="col-md-6 col-lg-6 pt-4">
+							<div class="card h-100 inner-school-card">
 								<img src="images/columbans.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title">Kenya Certificate of Secondary School</h5>
@@ -414,8 +332,8 @@
 							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-6">
-							<div class="card inner-work-card h-100">
+						<div class="col-md-6 col-lg-6 pt-4">
+							<div class="card h-100 inner-school-card">
 								<img src="images/elgon.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title">Kenya Certificate of Primary School</h5>
@@ -432,6 +350,98 @@
 			</div>
 		</div>
 	</section>
+
+
+
+	<section class="git-section container-fluid pt-4 pb-2">
+		<div class="container abilities">
+			<div class="row text-center pb-4 pt-4">
+				<div class="col-12 text-center pb-4">
+					<h1 class="text-white">What I Can Do</h1>
+				</div>
+
+				<!-- Left Column -->
+				<div class="col-md-7 card">
+					<div class="card-body">
+						<i class="fa-regular fa-pen-to-square"></i>
+						<h5 class="card-title">Design Software Solutions</h5>
+						<p class="card-text text-muted">Crafting tailored software solutions to meet diverse
+							business needs.</p>
+					</div>
+					<img id="designImg" src="images/UML.png" alt="">
+				</div>
+
+				<!-- Right Column -->
+				<div class="col-md-5">
+					<div class="card mb-4">
+						<div class="card-body">
+							<i class="fa-regular fa-keyboard"></i>
+							<h5 class="card-title">Write and Maintain Code</h5>
+							<p class="card-text text-muted">Developing and optimizing code for functionality and
+								efficiency.</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<i class="fa-solid fa-bug"></i>
+							<h5 class="card-title">Troubleshoot and Debug</h5>
+							<p class="card-text text-muted">Diagnosing and resolving software issues efficiently.</p>
+						</div>
+						<img id="errorImg" src="images/error.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- Bottom row-->
+			<div>
+				<div class="row text-center pb-4">
+					<div class="col-lg-3 pb-4">
+						<div class="card h-100">
+							<div class="card-body">
+								<i class="fa-solid fa-check"></i>
+								<h5 class="card-title">Code Refactor</h5>
+								<p class="card-text text-muted">To enforce best practices.</p>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-9 pb-4">
+						<div class="card h-100">
+							<div class="card-body">
+								<i class="fa-solid fa-check"></i>
+								<h5 class="card-title">Unit Tests</h5>
+								<p class="card-text text-muted">Ensuring code reliability through comprehensive unit
+									testing.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- GitHub Section -->
+		<div class="row git-section align-items-center pb-5">
+
+			<div class="container">
+				<div class="col-12">
+					<hr>
+				</div>
+				<div class="col-md-8 text-white">
+					<h3>Want to try out the projects?</h3>
+					<p>You can find the source code of the projects on my GitHub page.</p>
+				</div>
+				<div class="col-md-4 text-end">
+					<a href="https://github.com/cephard">
+						<button class="btn git-btn">Open GitHub <i class="fa-solid fa-arrow-right-long"></i></button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
