@@ -235,22 +235,31 @@ button {
 
 .responsive-iframe {
     position: relative;
-    width: 100%; /* Full width of the parent container */
-    padding-top: 56.25%; /* Aspect ratio: 16:9 (Height / Width * 100) */
-    border-radius: 12px; /* Rounded corners for the container */
-    overflow: hidden; /* Ensures the iframe corners are clipped */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Darker drop shadow */
-    background: #000; /* Optional: background color while the iframe loads */
+    width: 100%;
+    /* Full width of the parent container */
+    padding-top: 56.25%;
+    /* Aspect ratio: 16:9 (Height / Width * 100) */
+    border-radius: 12px;
+    /* Rounded corners for the container */
+    overflow: hidden;
+    /* Ensures the iframe corners are clipped */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    /* Darker drop shadow */
+    background: #000;
+    /* Optional: background color while the iframe loads */
 }
 
 .responsive-iframe iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
     border: 0;
-    border-radius: 12px; /* Applies the rounded corners directly to the iframe */
+    border-radius: 12px;
+    /* Applies the rounded corners directly to the iframe */
 }
 
 /* General Container Styles */
@@ -320,7 +329,7 @@ button {
 .abilities .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 
@@ -345,7 +354,7 @@ button {
 
 
 
-.git-section{
+.git-section {
     align-items: center;
     color: var(--text-color);
     background-color: #333333;
@@ -363,7 +372,8 @@ button {
     color: var(--text-color);
 }
 
-.git-section hr, .small-intro-section hr {
+.git-section hr,
+.small-intro-section hr {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
@@ -419,7 +429,7 @@ button {
 }
 
 
-.school-card img{
+.school-card img {
     object-fit: cover;
     height: 100%;
 }
@@ -518,15 +528,295 @@ p {
 
 
 /* Initial hidden state */
-.info-section, .card, .school-card {
+.info-section,
+.card,
+.school-card {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-  /* Fade-in animation */
-  .fade-in {
+}
+
+/* Fade-in animation */
+.fade-in {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
+
+
+
+
+
+
+
+/* Align the timeline container */
+.timeline {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+
+/* Style each timeline item */
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+}
+
+/* Style the timeline dot */
+.timeline-item .timeline-dot {
+    position: absolute;
+    left: -0.75rem;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Position the horizontal line (hr) */
+.timeline-item .timeline-hr {
+    position: absolute;
+    top: 8px;
+    /* Adjust to align with the dot */
+    left: 0;
+    width: 5rem;
+    /* Length of the horizontal line */
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+/* Align the vertical line for each item */
+.timeline-item .timeline-line {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* Content for each timeline item */
+.timeline-item .timeline-content {
+    padding-left: 20px;
+}
+
+/* Add hover effect for visual feedback */
+.timeline-item:hover .timeline-content {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background-color: rgb(245, 245, 245);
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.main .head {
+    font-size: 29px;
+    color: #fa6901;
+    position: relative;
+    margin-bottom: 100px;
+    font-weight: 500;
+}
+
+.main .head::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+}
+
+/* Container Css Start  */
+
+.timeline-container {
+    width: 70%;
+    height: auto;
+    margin: auto 0;
+    position: relative;
+}
+
+.timeline-container ul {
+    list-style: none;
+}
+
+.timeline-container ul::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to bottom, #fa6901, #f7c098);
+
+}
+
+.timeline-container ul li {
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 99;
+}
+
+.timeline-container ul li:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.timeline-container ul li .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f7c098;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.circle::after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    background-color: #fa6901;
+    border-radius: 50%;
+}
+
+ul li:nth-child(odd) .circle {
+    transform: translate(50%, -50%);
+    right: -30px;
+}
+
+ul li:nth-child(even) .circle {
+    transform: translate(-50%, -50%);
+    left: -30px;
+}
+
+ul li .date {
+    position: absolute;
+    width: 130px;
+    height: 33px;
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    border-radius: 15px;
+    top: -45px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+}
+
+.timeline-container ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    text-align: right;
+    transform: translateX(-30px);
+}
+
+ul li:nth-child(odd) .date {
+    right: 20px;
+}
+
+.timeline-container ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+}
+
+ul li .heading {
+    font-size: 17px;
+    color: #fa6901;
+
+}
+
+ul li p {
+    font-size: 13px;
+    color: #666;
+    line-height: 18px;
+    margin: 6px 0 4px 0;
+}
+
+ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #ff832b;
+    transition: all 0.3s ease;
+}
+
+
+@media only screen and (min-width:798px) and (max-width: 1100px) {
+    .timeline-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .timeline-container {
+        width: 70%;
+        transform: translateX(20px);
+    }
+
+    .timeline-container ul::after {
+        left: -40px;
+    }
+
+    .timeline-container ul li {
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 80px;
+    }
+
+    .timeline-container ul li .circle {
+        left: -40px;
+        transform: translate(-50%, -50%);
+    }
+
+    .timeline-container ul li .date {
+        left: 20px;
+    }
+
+    .timeline-container ul li:nth-child(odd) {
+        transform: translateX(0px);
+        text-align: left;
+    }
+
+    .timeline-container ul li:nth-child(even) {
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .timeline-container {
+        width: 80%;
+    }
+
+    .timeline-container ul::after {
+        left: -20px;
+    }
+
+    .timeline-container ul li .circle {
+        left: -20px;
+    }
+}
