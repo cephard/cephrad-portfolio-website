@@ -235,6 +235,26 @@ button {
 
 }
 
+.responsive-iframe {
+    position: relative;
+    width: 100%; /* Full width of the parent container */
+    padding-top: 56.25%; /* Aspect ratio: 16:9 (Height / Width * 100) */
+    border-radius: 12px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures the iframe corners are clipped */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Darker drop shadow */
+    background: #000; /* Optional: background color while the iframe loads */
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 0;
+    border-radius: 12px; /* Applies the rounded corners directly to the iframe */
+}
+
 /* General Container Styles */
 .info-sections {
     padding: clamp(1rem, 2vw, 4rem);
@@ -302,6 +322,7 @@ button {
 .abilities .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -348,6 +369,7 @@ button {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
+
 
 .bg-dark img {
     border-image: linear-gradient(#000, #222) 1;
