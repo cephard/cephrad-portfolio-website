@@ -37,8 +37,6 @@ body {
 
 h1 {
     color: #333333;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
-    /* Slight text shadow for depth */
 }
 
 
@@ -515,3 +513,20 @@ p {
 }
 
 .carousel-inner img {}
+
+
+
+
+/* Initial hidden state */
+.info-section, .card, .school-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
