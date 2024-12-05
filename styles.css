@@ -61,26 +61,33 @@ h1 {
     font-size: 13px;
     box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
     color: var(--text-color);
-    background-image: linear-gradient(to right, #ff832b, #f49f63); /* Retained the nice gradient */
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    /* Retained the nice gradient */
 }
 
 
 /* Hover Effect */
 .btn:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.3); /* Enhanced shadow for effect */
+    transform: translateY(-2px);
+    /* Slight lift on hover */
+    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow for effect */
 }
 
 /* Active (Clicked) State */
 .btn:active {
-    transform: translateY(1px); /* Button presses slightly */
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Reduce shadow for pressed effect */
+    transform: translateY(1px);
+    /* Button presses slightly */
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Reduce shadow for pressed effect */
 }
 
 /* Icon-specific styling */
 .btn i {
-    font-size: 16px; /* Ensure the icon size matches the text */
-    line-height: 1; /* Align icon with text */
+    font-size: 16px;
+    /* Ensure the icon size matches the text */
+    line-height: 1;
+    /* Align icon with text */
 }
 
 button {
@@ -94,8 +101,39 @@ button {
 }
 
 .header-section img {
-    width: 80px;
+    width: 30px;
 }
+
+/*----------------------------------------------------------------
+nav bar
+-----------------------------------------------------------------*/
+
+/* Align the navbar content to the right */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item a{
+    font-size: 15px;
+}
+
+/* Styling the nav links */
+.nav-link {
+    text-decoration: none; /* Remove underline by default */
+    margin-right: 10px;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    color: #FFD700; /* Change hover color (example: gold) */
+}
+
+/* Dropdown item hover */
+.dropdown-item:hover {
+    color: #FFD700; /* Change hover color for dropdown items */
+    background-color: transparent; /* Optional: remove background */
+}
+
 
 .navbar {
     background-color: var(--dark-color);
@@ -108,7 +146,8 @@ button {
     height: auto;
     width: auto;
 }
-
+/*
+---------------------------------------------------------------------------------------*/
 
 .contact {
     color: var(--dark-color);
@@ -343,7 +382,7 @@ button {
 --------------------------------------------------------------*/
 .section-title {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     position: relative;
 }
 
@@ -997,45 +1036,7 @@ ul li a {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients .swiper {
-    padding: 10px 0;
-}
-
-.clients .swiper-wrapper {
-    height: auto;
-}
-
-.clients .swiper-slide img {
-    transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-    transform: scale(1.1);
-}
-
-#clients .swiper-slide img {
-    width: auto;
-    /* Maintain the original aspect ratio */
-    height: auto;
-    /* Maintain the original aspect ratio */
-    max-width: 50px;
-    /* Ensure it doesn't overflow its container */
-    max-height: 50px;
-    /* Prevent height overflow */
-    object-fit: contain;
-    /* Make sure the entire image fits inside the container */
-    transition: filter 0.3s ease, transform 0.3s ease;
-    /* Add hover effects */
-}
-
-#clients .container {
-    max-width: 1200px;
-    /* Center and constrain width */
-    margin: 0 auto;
-}
-
 #clients .swiper {
-    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -1043,78 +1044,61 @@ ul li a {
 #clients .swiper-wrapper {
     display: flex;
     align-items: center;
-    /* Align images in the center */
 }
 
 #clients .swiper-slide {
     display: flex;
     justify-content: center;
-    /* Center images horizontally */
     align-items: center;
-    padding: 10px;
-    /* Space around the images */
+    padding: 5px;
     transition: transform 0.3s ease;
-    /* Add a hover animation */
 }
 
 #clients .swiper-slide:hover {
     transform: scale(1.1);
-    /* Slight zoom on hover */
 }
 
 #clients .swiper-slide img {
-    width: 100%;
     max-width: 150px;
-    /* Limit image size */
     height: auto;
     filter: grayscale(50%);
-    /* Make images slightly grayscale */
     transition: filter 0.3s ease, transform 0.3s ease;
+    object-fit: contain;
 }
 
 #clients .swiper-slide img:hover {
     filter: grayscale(0%);
-    /* Restore color on hover */
-}
-
-#clients .swiper-pagination {
-    position: absolute;
-    bottom: 15px;
-    text-align: center;
-    width: 100%;
-    z-index: 10;
 }
 
 #clients .swiper-pagination .swiper-pagination-bullet {
     background: #ddd;
-    /* Light color for bullets */
     width: 10px;
     height: 10px;
-    opacity: 1;
     margin: 0 5px;
     transition: background 0.3s ease;
 }
 
 #clients .swiper-pagination .swiper-pagination-bullet-active {
     background: #007bff;
-    /* Active bullet color */
 }
 
-/* Responsive styling for various devices */
+/* Responsive styling */
 @media (max-width: 768px) {
     #clients .swiper-slide img {
         max-width: 120px;
-        /* Reduce image size for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     #clients .swiper-slide img {
         max-width: 90px;
-        /* Further reduce image size for very small screens */
     }
 }
 
 /*--------------------------------------------------------------
-# Clients Section end
+# Clients Section End
 --------------------------------------------------------------*/
+
+
+
+
