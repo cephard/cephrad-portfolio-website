@@ -208,9 +208,17 @@ nav bar
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 56px);
+    height: calc(100vh);
     background-color: #f8f9fa;
 }
+
+section {
+    min-height: 100vh; /* Ensures each section is at least the height of the viewport */
+    display: flex; /* Use flexbox for centering or layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Optional: Centers content vertically */
+}
+
 
 .about-me {
     color: var(--text-color);
@@ -864,7 +872,6 @@ p {
     display: grid;
     place-items: center;
     background-color: rgb(245, 245, 245);
-    padding: 50px 0;
     border-radius: clamp(0px, 2vw, 10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
