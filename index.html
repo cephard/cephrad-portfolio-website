@@ -12,6 +12,11 @@
 	<link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/gridstyle.css">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
 
 
 	<!--<link rel="stylesheet" href="cssprofile.css">-->
@@ -115,10 +120,15 @@
 
 
 	<section class="small-intro-section pt-4 pb-5">
+		<!-- Section Title -->
+		<div class="container section-title" data-aos="fade-up">
+			<h2 class="head">Who am I?</h2>
+		</div><!-- End Section Title -->
+
 		<div class="container">
-			<div class="row pt-4 pb-4">
+			<div class="row pt-4 pb-4 ">
 				<div class="col-lg-6">
-					<h3>Who am I?</h3>
+
 					<p>A recent master's graduate passionate about building scalable enterprise applications through
 						object-oriented programming. I enjoy tackling real-world problems with thoughtful, efficient
 						solutions.</p>
@@ -168,10 +178,11 @@
 			<!-- Content Sections -->
 			<div class="info-sections">
 				<div class="row pt-4 info-section" id="info-0" style="display: flex;">
-					<div class="col-12">
-						<h3>Projects</h3>
+					<!-- Section Title -->
+					<div class="container section-title" data-aos="fade-up">
+						<h2 class="head">Projects</h2>
 						<p>CAFE APP | SERIOUS GAME </p>
-					</div>
+					</div><!-- End Section Title -->
 					<div class="col-12">
 						<div class="responsive-iframe">
 							<iframe id="video-frame" src="https://www.youtube.com/embed/wB0g15mclbs?si=7sG2SBkM6zjhk-Ud"
@@ -185,8 +196,8 @@
 				</div>
 
 				<div class="row pt-4 info-section" id="info-1" style="display: none;">
-					<div class="col-12">
-						<h3>Frameworks</h3>
+					<div class="container section-title" data-aos="fade-up">
+						<h2 class="head">Frameworks</h2>
 						<p>Unity | Scenebuilder | Javafx | SQLite | PlayFab | JDBC | Bootstrap</p>
 					</div>
 					<div class="col-12">
@@ -198,8 +209,8 @@
 				</div>
 
 				<div class="row pt-4 info-section" id="info-2" style="display: none;">
-					<div class="col-12">
-						<h3>Programing Languages</h3>
+					<div class="container section-title" data-aos="fade-up">
+						<h2 class="head">Programing Languages</h2>
 						<p>Java | C# | Sql </p>
 						<h2>Other</h2>
 						<p>Html | CSS | FXML</p>
@@ -213,7 +224,7 @@
 
 				<div class="row pt-4 info-section" id="info-3" style="display: none;">
 					<div class="col-12">
-						<h3>Hobbies</h3>
+						<h2>Hobbies</h2>
 					</div>
 					<div class="col-12">
 						<p>Singing | Making Music</p>
@@ -225,14 +236,80 @@
 		</div>
 	</section>
 
+	<section id="clients" class="clients section">
+
+		<div class="container">
+			<div class="swiper init-swiper">
+				<script type="application/json" class="swiper-config">
+			  {
+				"loop": true,
+				"speed": 600,
+				"autoplay": {
+				  "delay": 5000
+				},
+				"slidesPerView": "auto",
+				"pagination": {
+				  "el": ".swiper-pagination",
+				  "type": "bullets",
+				  "clickable": true
+				},
+				"breakpoints": {
+				  "320": {
+					"slidesPerView": 2,
+					"spaceBetween": 40
+				  },
+				  "480": {
+					"slidesPerView": 3,
+					"spaceBetween": 60
+				  },
+				  "640": {
+					"slidesPerView": 4,
+					"spaceBetween": 80
+				  },
+				  "992": {
+					"slidesPerView": 6,
+					"spaceBetween": 120
+				  }
+				}
+			  }
+			</script>
+				<div class="swiper-wrapper align-items-center">
+					<div class="swiper-slide"><img src="https://img.icons8.com/ios-filled/50/unity.png"
+							class="img-fluid" alt="unity" /></div>
+
+					<div class="swiper-slide"><img src="https://img.icons8.com/fluency/48/bootstrap.png"
+							class="img-fluid" alt="bootstrap" />
+					</div>
+
+					<div class="swiper-slide"><img src="images/csharp.png" class="img-fluid" alt="">
+					</div>
+					<div class="swiper-slide"><img src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png"
+							class="img-fluid" alt="java-coffee-cup-logo" /></div>
+					<div class="swiper-slide"><img src="https://img.icons8.com/ios-filled/50/unity.png"
+							class="img-fluid" alt="unity" /></div>
+
+					<div class="swiper-slide"><img src="https://img.icons8.com/fluency/48/bootstrap.png"
+							class="img-fluid" alt="bootstrap" />
+					</div>
+
+					<div class="swiper-slide"><img src="images/csharp.png" class="img-fluid" alt="">
+					</div>
+					<div class="swiper-slide"><img src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png"
+							class="img-fluid" alt="java-coffee-cup-logo" /></div>
+				</div>
+			</div>
+
+		</div>
+
+	</section><!-- /Clients Section -->
 
 	<section class="work-and-school-section pt-4 pb-5">
 		<div class="container">
-			<div class="row work-section-top">
-				<div class="col-12 pb-2">
-					<H3>Work History</H3>
-				</div>
+
+			<div class="container section-title" data-aos="fade-up">
+				<h2 class="head">Work History</h2>
 			</div>
+
 
 			<div class="row work-section align-items-center">
 				<div class="col-md-6 col-lg-4 pt-4 ">
@@ -273,32 +350,35 @@
 
 	<section class="pt-4 pb-5">
 		<div class="main container">
-			<h3 class="head">Education Background</h3>
+			<div class="container section-title" data-aos="fade-up">
+				<h2 class="head">Education Background</h2>
+
+			</div>
 			<div class="timeline-container">
 				<ul>
 					<li>
-						<h3 class="heading">MSc Computer Science</h3>
+						<h2 class="heading">MSc Computer Science</h2>
 						<p>Swansea University</p>
 						<a href="#">Read More ></a>
 						<span class="date">Sept 23-Sept 24</span>
 						<span class="circle"></span>
 					</li>
 					<li>
-						<h3 class="heading">BSc Computer Security and Forensics</h3>
+						<h2 class="heading">BSc Computer Security and Forensics</h2>
 						<p>Jaramogi Oginga Odinga University</p>
 						<a href="#">Read More ></a>
 						<span class="date">Sept 16-Apr 20</span>
 						<span class="circle"></span>
 					</li>
 					<li>
-						<h3 class="heading">Kenya Certificate of Secondary School</h3>
+						<h2 class="heading">Kenya Certificate of Secondary School</h2>
 						<p>St Columban's Secondary School</p>
 						<a href="#">Read More ></a>
 						<span class="date">Jan 12-Sept 15</span>
 						<span class="circle"></span>
 					</li>
 					<li>
-						<h3 class="heading">Kenya Certificate of Primary School</h3>
+						<h2 class="heading">Kenya Certificate of Primary School</h2>
 						<p>Mt Elgon Academy</p>
 						<a href="#">Read More ></a>
 						<span class="date">Jan 06-Dec 10</span>
@@ -314,8 +394,8 @@
 	<section class="git-section container-fluid pt-4 pb-2">
 		<div class="container abilities">
 			<div class="row text-center pb-4 pt-4">
-				<div class="col-12 text-center pb-4">
-					<h1 class="text-white">What I Can Do</h1>
+				<div class="container section-title" data-aos="fade-up">
+					<h2 class="head">What I Can Do</h2>
 				</div>
 
 				<!-- Left Column -->
@@ -381,7 +461,7 @@
 					<hr>
 				</div>
 				<div class="col-md-8 text-white">
-					<h3>Want to try out the projects?</h3>
+					<h2>Want to try out the projects?</h2>
 					<p>You can find the source code of the projects on my GitHub page.</p>
 				</div>
 				<div class="col-md-4 text-end">
@@ -401,7 +481,103 @@
 	<script src="Bootstrap/js/popper.min.js"></script>
 	<script src="Bootstrap/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min"></script>
 
+
+
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact-me section pb-5 pt-5">
+
+		<!-- Section Title -->
+		<div class="container section-title" data-aos="fade-up">
+			<h2 class="head">Contact</h2>
+			<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+		</div><!-- End Section Title -->
+
+		<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+			<div class="row gx-lg-0 gy-4">
+
+				<div class="col-lg-4">
+					<div class="info-container d-flex flex-column align-items-center justify-content-center">
+						<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+							<i class="bi bi-geo-alt flex-shrink-0"></i>
+							<div>
+								<h2>Address</h2>
+								<p>SA1 3AN Swansea</p>
+							</div>
+						</div><!-- End Info Item -->
+
+						<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+							<i class="bi bi-telephone flex-shrink-0"></i>
+							<div>
+								<h2>Call Me</h2>
+								<p>07979474451</p>
+							</div>
+						</div><!-- End Info Item -->
+
+						<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+							<i class="bi bi-envelope flex-shrink-0"></i>
+							<div>
+								<h2>Email Me</h2>
+								<p>cephkip@gmail.com</p>
+							</div>
+						</div><!-- End Info Item -->
+
+						<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+							<i class="bi bi-clock flex-shrink-0"></i>
+							<div>
+								<h2>Available:</h2>
+								<p>Mon-Sat: 08:00 AM - 16:00 PM</p>
+							</div>
+						</div><!-- End Info Item -->
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-8">
+					<form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade"
+						data-aos-delay="100">
+						<div class="row gy-4">
+
+							<div class="col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+							</div>
+
+							<div class="col-md-6 ">
+								<input type="email" class="form-control" name="email" placeholder="Your Email"
+									required="">
+							</div>
+
+							<div class="col-md-12">
+								<input type="text" class="form-control" name="subject" placeholder="Subject"
+									required="">
+							</div>
+
+							<div class="col-md-12">
+								<textarea class="form-control" name="message" rows="8" placeholder="Message"
+									required=""></textarea>
+							</div>
+
+							<div class="col-md-12 text-center">
+								<div class="loading">Loading</div>
+								<div class="error-message"></div>
+								<div class="sent-message">Your message has been sent. Thank you!</div>
+
+								<button type="submit">Send Message</button>
+							</div>
+
+						</div>
+					</form>
+				</div><!-- End Contact Form -->
+
+			</div>
+
+		</div>
+
+	</section><!-- /Contact Section -->
 
 
 

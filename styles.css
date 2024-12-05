@@ -7,6 +7,12 @@
     --brown-color: #b25e21;
 }
 
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Montserrat", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +25,15 @@ body {
     width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    font-family: var(--dark-font);
+}
 
 body {
     background: linear-gradient(135deg, #d1d1d1, #e2e2e2);
@@ -39,6 +54,34 @@ h1 {
     color: #333333;
 }
 
+.btn {
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+    color: var(--text-color);
+    background-image: linear-gradient(to right, #ff832b, #f49f63); /* Retained the nice gradient */
+}
+
+
+/* Hover Effect */
+.btn:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.3); /* Enhanced shadow for effect */
+}
+
+/* Active (Clicked) State */
+.btn:active {
+    transform: translateY(1px); /* Button presses slightly */
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); /* Reduce shadow for pressed effect */
+}
+
+/* Icon-specific styling */
+.btn i {
+    font-size: 16px; /* Ensure the icon size matches the text */
+    line-height: 1; /* Align icon with text */
+}
 
 button {
     width: 100%;
@@ -194,8 +237,152 @@ button {
 }
 
 
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact-me .info-container {
+    background-color: var(--accent-color);
+    height: 100%;
+    padding: 20px;
+}
+
+.contact-me .info-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 90%);
+}
+
+.contact-me .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-me .info-item i {
+    font-size: 20px;
+    color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact-me .info-item h3 {
+    color: var(--contrast-color);
+    font-size: 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-me .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact-me .info-item:hover i {
+    background: var(--contrast-color);
+    color: var(--accent-color);
+}
+
+.contact-me .php-email-form {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.contact-me .php-email-form input[type=text],
+.contact-me .php-email-form input[type=email],
+.contact-me .php-email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: var(--surface-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact-me .php-email-form input[type=text]:focus,
+.contact-me .php-email-form input[type=email]:focus,
+.contact-me .php-email-form textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.contact-me .php-email-form input[type=text]::placeholder,
+.contact-me .php-email-form input[type=email]::placeholder,
+.contact-me .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact-me .php-email-form button[type=submit] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact-me .php-email-form button[type=submit]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
 
 
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #fa6901;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+}
+
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+  # Hero Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Contact Section 
+--------------------------------------------------------------*/
 
 
 .abilities i {
@@ -352,25 +539,21 @@ button {
 
 
 
-
+/*-------------------------------------------------------------------------
+Git
+---------------------------------------------------------------------------*/
 
 .git-section {
     align-items: center;
     color: var(--text-color);
     background-color: #333333;
-    /* Dark card background */
     color: #f0f0f0;
-    /* Light text for contrast */
 }
 
 .git-section-row {
     color: var(--text-color);
 }
 
-.git-btn {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
 
 .git-section hr,
 .small-intro-section hr {
@@ -378,6 +561,10 @@ button {
     background-color: var(--primary-color);
 }
 
+
+/*-------------------------------------------------------------------------
+Git
+---------------------------------------------------------------------------*/
 
 .bg-dark img {
     border-image: linear-gradient(#000, #222) 1;
@@ -608,10 +795,8 @@ p {
     padding: 10px;
 }
 
-
-
-
-
+/*----------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
 
 .main {
     width: 100%;
@@ -620,27 +805,12 @@ p {
     place-items: center;
     background-color: rgb(245, 245, 245);
     padding: 50px 0;
-    border-radius: 10px;
+    border-radius: clamp(0px, 2vw, 10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-.main .head {
-    font-size: 29px;
-    color: #fa6901;
-    position: relative;
-    margin-bottom: 100px;
-    font-weight: 500;
-}
-
-.main .head::after {
-    content: " ";
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    background-image: linear-gradient(to right, #ff832b, #f49f63);
+.main:hover {
+    box-shadow: 0px 1px 2.5px 0px var(--primary-color);
 }
 
 /* Container Css Start  */
@@ -820,3 +990,131 @@ ul li a {
         left: -20px;
     }
 }
+
+/*----------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients .swiper {
+    padding: 10px 0;
+}
+
+.clients .swiper-wrapper {
+    height: auto;
+}
+
+.clients .swiper-slide img {
+    transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+    transform: scale(1.1);
+}
+
+#clients .swiper-slide img {
+    width: auto;
+    /* Maintain the original aspect ratio */
+    height: auto;
+    /* Maintain the original aspect ratio */
+    max-width: 50px;
+    /* Ensure it doesn't overflow its container */
+    max-height: 50px;
+    /* Prevent height overflow */
+    object-fit: contain;
+    /* Make sure the entire image fits inside the container */
+    transition: filter 0.3s ease, transform 0.3s ease;
+    /* Add hover effects */
+}
+
+#clients .container {
+    max-width: 1200px;
+    /* Center and constrain width */
+    margin: 0 auto;
+}
+
+#clients .swiper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#clients .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    /* Align images in the center */
+}
+
+#clients .swiper-slide {
+    display: flex;
+    justify-content: center;
+    /* Center images horizontally */
+    align-items: center;
+    padding: 10px;
+    /* Space around the images */
+    transition: transform 0.3s ease;
+    /* Add a hover animation */
+}
+
+#clients .swiper-slide:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+#clients .swiper-slide img {
+    width: 100%;
+    max-width: 150px;
+    /* Limit image size */
+    height: auto;
+    filter: grayscale(50%);
+    /* Make images slightly grayscale */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#clients .swiper-slide img:hover {
+    filter: grayscale(0%);
+    /* Restore color on hover */
+}
+
+#clients .swiper-pagination {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+#clients .swiper-pagination .swiper-pagination-bullet {
+    background: #ddd;
+    /* Light color for bullets */
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    margin: 0 5px;
+    transition: background 0.3s ease;
+}
+
+#clients .swiper-pagination .swiper-pagination-bullet-active {
+    background: #007bff;
+    /* Active bullet color */
+}
+
+/* Responsive styling for various devices */
+@media (max-width: 768px) {
+    #clients .swiper-slide img {
+        max-width: 120px;
+        /* Reduce image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #clients .swiper-slide img {
+        max-width: 90px;
+        /* Further reduce image size for very small screens */
+    }
+}
+
+/*--------------------------------------------------------------
+# Clients Section end
+--------------------------------------------------------------*/

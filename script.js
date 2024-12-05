@@ -53,6 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(iframe);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const swiperConfig = JSON.parse(document.querySelector('.swiper-config').textContent);
+  const swiper = new Swiper('.init-swiper', swiperConfig);
+});
 
 
 
