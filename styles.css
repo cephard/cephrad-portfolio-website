@@ -98,7 +98,19 @@ button {
 
 .header-section {
     background-color: var(--dark-color);
+    position: fixed;
+    /* Keeps the navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    /* Stretches the navbar across the page */
+    padding: 5px 0;
+    margin-bottom: 5px;
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Adds a shadow for better visibility */
 }
+
 
 .header-section img {
     width: 30px;
@@ -113,25 +125,29 @@ nav bar
     justify-content: flex-end;
 }
 
-.nav-item a{
+.nav-item a {
     font-size: 15px;
 }
 
 /* Styling the nav links */
 .nav-link {
-    text-decoration: none; /* Remove underline by default */
+    text-decoration: none;
+    /* Remove underline by default */
     margin-right: 10px;
 }
 
 /* Hover effect for nav links */
 .nav-link:hover {
-    color: #FFD700; /* Change hover color (example: gold) */
+    color: #FFD700;
+    /* Change hover color (example: gold) */
 }
 
 /* Dropdown item hover */
 .dropdown-item:hover {
-    color: #FFD700; /* Change hover color for dropdown items */
-    background-color: transparent; /* Optional: remove background */
+    color: #FFD700;
+    /* Change hover color for dropdown items */
+    background-color: transparent;
+    /* Optional: remove background */
 }
 
 
@@ -140,12 +156,16 @@ nav bar
     color: var(--text-color);
 }
 
+
+
+
 .navbar-toggler {
     padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
     height: auto;
     width: auto;
 }
+
 /*
 ---------------------------------------------------------------------------------------*/
 
@@ -383,6 +403,7 @@ nav bar
 .section-title {
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 50px;
     position: relative;
 }
 
@@ -1059,9 +1080,8 @@ ul li a {
 }
 
 #clients .swiper-slide img {
-    max-width: 150px;
+    width: clamp(50px, 10vw, 100px);
     height: auto;
-    filter: grayscale(50%);
     transition: filter 0.3s ease, transform 0.3s ease;
     object-fit: contain;
 }
@@ -1098,7 +1118,3 @@ ul li a {
 /*--------------------------------------------------------------
 # Clients Section End
 --------------------------------------------------------------*/
-
-
-
-
