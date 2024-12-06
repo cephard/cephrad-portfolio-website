@@ -46,13 +46,16 @@
 							<a class="nav-link" href="#me">About Me </a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#work">Work</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#education">Education</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#projects">Projects</a>
+							<a class="nav-link" href="#capabilities">Capabilities</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact Me</a>
@@ -77,7 +80,7 @@
 		</div>
 	</header>
 
-	<div class="hero">
+	<div id="hero" class="hero">
 		<div class="container-fluid">
 			<div class="row top-hero text-center">
 				<div class="col-0 col-lg-3"></div>
@@ -126,22 +129,23 @@
 	</div>
 
 
-	<section id="me" class="small-intro-section pb-5">
+	<section id="me" class="small-intro-section">
 		<!-- Section Title -->
 		<div class="container section-title" data-aos="fade-up">
 			<h2 class="head">Who am I?</h2>
 		</div><!-- End Section Title -->
 
 		<div class="container">
-			<div class="row pt-4 pb-4 ">
-				<div class="col-lg-6">
+			<div class="row">
+				<div class="col-lg-6 d-flex justify-content-center align-items-center pb-4">
+					<i id="myAvatar" class="fa fa-user-tie fa-3x"></i>
+				</div>
 
+
+				<div class="col-lg-6">
 					<p>A recent master's graduate passionate about building scalable enterprise applications through
 						object-oriented programming. I enjoy tackling real-world problems with thoughtful, efficient
 						solutions.</p>
-				</div>
-
-				<div class="col-lg-6">
 					<p>I value both productive solitude and the power of teamwork, collaborating with others to achieve
 						shared goals.</p>
 					<p>Though new to this field, I’ve gained hands-on experience with various solo projects.</p>
@@ -246,13 +250,10 @@
 
 
 	<section id="work" class="work-and-school-section pt-4 pb-5">
+		<div class="container section-title" data-aos="fade-up">
+			<h2 class="head">Work History</h2>
+		</div>
 		<div class="container">
-
-			<div class="container section-title" data-aos="fade-up">
-				<h2 class="head">Work History</h2>
-			</div>
-
-
 			<div class="row work-section align-items-center">
 				<div class="col-md-6 col-lg-4 pt-4 ">
 					<div class="card inner-work-card h-100">
@@ -386,7 +387,7 @@
 
 	<section id="education" class="pt-4 pb-5">
 		<div class="main container">
-			<div class="container section-title pb-4" data-aos="fade-up">
+			<div class="container section-title" data-aos="fade-up">
 				<h2 class="head">Education Background</h2>
 
 			</div>
@@ -427,7 +428,7 @@
 
 
 
-	<section class="git-section container-fluid pt-4 pb-2">
+	<section id="capabilities" class="git-section container-fluid pt-4 pb-2">
 		<div class="container abilities">
 			<div class="row text-center pb-4 pt-4">
 				<div class="container section-title" data-aos="fade-up">

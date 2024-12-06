@@ -99,16 +99,12 @@ button {
 .header-section {
     background-color: var(--dark-color);
     position: fixed;
-    /* Keeps the navbar fixed at the top */
     top: 0;
     width: 100%;
-    /* Stretches the navbar across the page */
     padding: 5px 0;
     margin-bottom: 5px;
     z-index: 1000;
-    /* Ensures it stays above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: Adds a shadow for better visibility */
 }
 
 
@@ -132,22 +128,18 @@ nav bar
 /* Styling the nav links */
 .nav-link {
     text-decoration: none;
-    /* Remove underline by default */
     margin-right: 10px;
 }
 
-/* Hover effect for nav links */
 .nav-link:hover {
-    color: #FFD700;
-    /* Change hover color (example: gold) */
+    color: var(--primary-color) !important;
 }
 
 /* Dropdown item hover */
 .dropdown-item:hover {
-    color: #FFD700;
-    /* Change hover color for dropdown items */
     background-color: transparent;
-    /* Optional: remove background */
+    color: var(--primary-color) !important;
+
 }
 
 
@@ -213,10 +205,14 @@ nav bar
 }
 
 section {
-    min-height: 100vh; /* Ensures each section is at least the height of the viewport */
-    display: flex; /* Use flexbox for centering or layout */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Optional: Centers content vertically */
+    min-height: 100vh;
+    /* Ensures each section is at least the height of the viewport */
+    display: flex;
+    /* Use flexbox for centering or layout */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: center;
+    /* Optional: Centers content vertically */
 }
 
 
@@ -408,19 +404,32 @@ section {
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
+.section {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Slightly move the section down initially */
+    transition: all 0.5s ease; /* Smooth transition for opacity and transform */
+}
+
+.section.visible {
+    opacity: 1; /* Make section fully visible */
+    transform: translateY(0); /* Move section to its original position */
+}
+
+
 .section-title {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 30px;
     position: relative;
+
 }
 
 
 .section-title h2 {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
     position: relative;
     color: #fa6901;
 }
@@ -629,6 +638,11 @@ Git
     background-color: var(--primary-color);
 }
 
+#myAvatar {
+    font-size: clamp(100px, 10vw, 200px);
+    
+}
+
 
 /*-------------------------------------------------------------------------
 Git
@@ -658,6 +672,10 @@ Git
     color: var(--text-color);
     background-color: var(--dark-color);
     box-shadow: 0 2px 3px var(--primary-color);
+}
+
+.work-and-school-section {
+    margin-bottom: -50px;
 }
 
 
@@ -874,6 +892,8 @@ p {
     background-color: rgb(245, 245, 245);
     border-radius: clamp(0px, 2vw, 10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    margin-top: 50px;
 }
 
 .main:hover {
