@@ -180,6 +180,7 @@ nav bar
     box-shadow: 1px 1px 10px 0px var(--dark-color);
     transform: scale(1.05);
 }
+/**/
 
 .contact a {
     color: var(--dark-color);
