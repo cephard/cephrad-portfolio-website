@@ -96,6 +96,7 @@ button {
     padding: 10px;
 }
 
+
 .header-section {
     background-color: var(--dark-color);
     position: fixed;
@@ -105,7 +106,10 @@ button {
     margin-bottom: 5px;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 60px;
+    /* Explicitly define header height */
 }
+
 
 
 .header-section img {
@@ -142,14 +146,10 @@ nav bar
 
 }
 
-
 .navbar {
     background-color: var(--dark-color);
     color: var(--text-color);
 }
-
-
-
 
 .navbar-toggler {
     padding: 0.25rem 0.5rem;
@@ -176,8 +176,6 @@ nav bar
     box-shadow: 1px 1px 10px 0px var(--primary-color);
     transform: scale(1.05);
 }
-
-
 
 .contact a {
     color: var(--dark-color);
@@ -212,7 +210,6 @@ section {
     flex-direction: column;
     /* Stack content vertically */
     justify-content: center;
-    /* Optional: Centers content vertically */
 }
 
 
@@ -306,7 +303,6 @@ section {
 .contact-me .info-container {
     background-color: var(--accent-color);
     height: 100%;
-    padding: 20px;
 }
 
 .contact-me .info-item {
@@ -405,33 +401,35 @@ section {
 # Global Section Titles
 --------------------------------------------------------------*/
 .section {
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Slightly move the section down initially */
-    transition: all 0.5s ease; /* Smooth transition for opacity and transform */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+    padding: 30px 0;
+    scroll-margin-top: 60px;
 }
 
 .section.visible {
-    opacity: 1; /* Make section fully visible */
-    transform: translateY(0); /* Move section to its original position */
+    opacity: 1;
+    /* Make section fully visible */
+    transform: translateY(0);
+    /* Move section to its original position */
 }
 
 
 .section-title {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 30px;
     position: relative;
 
 }
 
-
 .section-title h2 {
-    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 12px;
-    padding-bottom: 12px;
+    margin-bottom: 15px;
     position: relative;
     color: #fa6901;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .section-title h2::after {
@@ -524,12 +522,6 @@ section {
     border: 0;
     border-radius: 12px;
     /* Applies the rounded corners directly to the iframe */
-}
-
-/* General Container Styles */
-.info-sections {
-    padding: clamp(1rem, 2vw, 4rem);
-    /* Adjust padding based on viewport */
 }
 
 /* Heading Styling */
@@ -640,7 +632,7 @@ Git
 
 #myAvatar {
     font-size: clamp(100px, 10vw, 200px);
-    
+
 }
 
 
@@ -673,11 +665,6 @@ Git
     background-color: var(--dark-color);
     box-shadow: 0 2px 3px var(--primary-color);
 }
-
-.work-and-school-section {
-    margin-bottom: -50px;
-}
-
 
 .inner-school-card,
 .inner-work-card {
@@ -883,21 +870,17 @@ p {
 
 /*----------------------------------------------------------------------------
 ------------------------------------------------------------------------------*/
+#education {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+
+}
 
 .main {
     width: 100%;
     height: auto;
     display: grid;
     place-items: center;
-    background-color: rgb(245, 245, 245);
-    border-radius: clamp(0px, 2vw, 10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    padding: 25px;
-    margin-top: 50px;
-}
-
-.main:hover {
-    box-shadow: 0px 1px 2.5px 0px var(--primary-color);
 }
 
 /* Container Css Start  */
@@ -1145,3 +1128,128 @@ ul li a {
 /*--------------------------------------------------------------
 # Clients Section End
 --------------------------------------------------------------*/
+
+
+
+/*contact*/
+/* Contact Section */
+.contact-me {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-me .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-me .section-title p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.contact-me .info-container {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-me .info-item i {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.contact-me .info-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-me .info-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.contact-me .php-email-form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me .php-email-form input,
+.contact-me .php-email-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-me .php-email-form input:focus,
+.contact-me .php-email-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-me .php-email-form button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-me .php-email-form button:hover {
+    background: #0056b3;
+}
+
+.contact-me .loading,
+.contact-me .error-message,
+.contact-me .sent-message {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-me .loading {
+    color: #007bff;
+}
+
+.contact-me .error-message {
+    color: red;
+}
+
+.contact-me .sent-message {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-me .info-container {
+        text-align: center;
+    }
+
+    .contact-me .info-item {
+        justify-content: center;
+    }
+
+    .contact-me .info-item i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
