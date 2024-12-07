@@ -55,14 +55,19 @@ h1 {
 }
 
 .btn {
-    border-radius: 15px;
-    display: grid;
-    place-items: center;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 13px;
     box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
     color: var(--text-color);
     background-image: linear-gradient(to right, #ff832b, #f49f63);
-    /* Retained the nice gradient */
+    width: auto;
+}
+
+.btn i {
+    margin-left: 8px;
 }
 
 
@@ -92,7 +97,6 @@ h1 {
 
 button {
     width: 100%;
-    max-width: 200px;
     padding: 10px;
 }
 
@@ -164,16 +168,16 @@ nav bar
 .contact {
     color: var(--dark-color);
     font-size: clamp(16px, 4vw, 32px);
-    background-color: var(--primary-color);
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    border-radius: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .contact:hover {
-    background-color: var(--dark-color);
-    color: var(--primary-color);
-    box-shadow: 1px 1px 10px 0px var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 1px 1px 10px 0px var(--dark-color);
     transform: scale(1.05);
 }
 
@@ -300,10 +304,7 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact-me .info-container {
-    background-color: var(--accent-color);
-    height: 100%;
-}
+
 
 .contact-me .info-item {
     width: 100%;
@@ -351,14 +352,6 @@ section {
     color: var(--accent-color);
 }
 
-.contact-me .php-email-form {
-    background-color: var(--surface-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-}
-
 .contact-me .php-email-form input[type=text],
 .contact-me .php-email-form input[type=email],
 .contact-me .php-email-form textarea {
@@ -374,7 +367,8 @@ section {
 .contact-me .php-email-form input[type=text]:focus,
 .contact-me .php-email-form input[type=email]:focus,
 .contact-me .php-email-form textarea:focus {
-    border-color: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .contact-me .php-email-form input[type=text]::placeholder,
@@ -384,16 +378,20 @@ section {
 }
 
 .contact-me .php-email-form button[type=submit] {
-    color: var(--contrast-color);
-    background: var(--accent-color);
+    color: var(--text-color);
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
     border: 0;
     padding: 10px 30px;
     transition: 0.4s;
     border-radius: 50px;
 }
 
+
 .contact-me .php-email-form button[type=submit]:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    /*  background: color-mix(in srgb, var(--primary-color), transparent 50%); */
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+
 }
 
 
@@ -463,7 +461,6 @@ section {
 .abilities i {
     color: white;
     font-size: clamp(1.5rem, 2.5vw + 0.5rem, 4rem);
-    /* Responsive font size for icons */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -635,6 +632,13 @@ Git
 
 }
 
+.github-link {
+    display: inline-block;
+    /* Ensures the link behaves like a block element but only takes as much space as the button */
+    text-decoration: none;
+    /* Removes underline */
+}
+
 
 /*-------------------------------------------------------------------------
 Git
@@ -642,9 +646,7 @@ Git
 
 .bg-dark img {
     border-image: linear-gradient(#000, #222) 1;
-    /* Darker gradient */
     border-image-slice: 1;
-    /* Adjust slice to cover more area */
 }
 
 .card img {
@@ -1149,12 +1151,6 @@ ul li a {
     margin-top: 10px;
 }
 
-.contact-me .info-container {
-    background: #fff;
-    padding: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .contact-me .info-item {
     display: flex;
     align-items: center;
@@ -1179,10 +1175,16 @@ ul li a {
     margin: 0;
 }
 
-.contact-me .php-email-form {
-    background: #fff;
-    padding: 30px;
+.contact-container {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.contact-me .php-email-form {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
 }
 
 .contact-me .php-email-form input,
@@ -1198,12 +1200,11 @@ ul li a {
 
 .contact-me .php-email-form input:focus,
 .contact-me .php-email-form textarea:focus {
-    border-color: #007bff;
+    border-color: var(--primary-color);
     outline: none;
 }
 
 .contact-me .php-email-form button {
-    background: #007bff;
     color: #fff;
     padding: 10px 25px;
     border: none;
@@ -1252,4 +1253,65 @@ ul li a {
         margin-right: 0;
         margin-bottom: 10px;
     }
+}
+
+.contact-me .info-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--text-color);
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-me .info-container {
+    height: 100%;
+    padding: 30px;
+}
+
+.info-column {
+    background-color: var(--dark-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-me .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-me .info-item i {
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: color-mix(in srgb, var(--dark-color), transparent 20%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact-me .info-item h3 {
+    color: var(--text-colorr);
+    font-size: 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-me .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+
+.contact-me .info-item:hover i {
+    background-color: var(--text-color);
+    color: var(--primary-color);
 }
