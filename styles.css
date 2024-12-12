@@ -193,7 +193,7 @@ nav bar
 .my-photo {
     max-width: 200px;
     border-radius: 50%;
-    width: 80vw;
+    width: clamp(100px, 50vw, 200px);
     margin-top: -100px;
 }
 
@@ -411,7 +411,7 @@ section {
 
 .section-title {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     position: relative;
 
 }
@@ -433,7 +433,7 @@ section {
     height: 3px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
     margin: auto;
     background-image: linear-gradient(to right, #ff832b, #f49f63);
 }
@@ -551,6 +551,8 @@ section {
     /* Responsive font-size */
     margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
+
+
 
 /* Paragraph Styling */
 .info-section p {
@@ -775,7 +777,7 @@ Git
     border-color: var(--primary-color);
     border-radius: 10px;
     transition: background-color 0.3s, border-color 0.3s;
-    color: var(--primary-color);
+    color: var(--dark-color);
 }
 
 .btn-outline-primary:hover {
@@ -1008,6 +1010,10 @@ ul li:nth-child(odd) .date {
     float: right;
     clear: left;
     transform: translateX(30px);
+}
+
+.timeline-container i{
+    padding-right: 5px;
 }
 
 ul li .heading {
