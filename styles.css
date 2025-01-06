@@ -5,9 +5,6 @@
     --grey-color: #7d8790;
     --text-color: #fff;
     --brown-color: #b25e21;
-}
-
-:root {
     --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Montserrat", sans-serif;
     --nav-font: "Poppins", sans-serif;
@@ -19,35 +16,26 @@
     padding: 0;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
     width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
     font-family: var(--dark-font);
 }
 
 body {
     background: linear-gradient(135deg, #d1d1d1, #e2e2e2);
-    /* Light silver gradient for depth */
     color: #333333;
     font-family: 'Arial', sans-serif;
 }
 
 .card {
     background-color: #ffffff;
-    /* White background for the content */
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
 }
 
 h1 {
@@ -68,38 +56,24 @@ h1 {
 
 .btn i {
     margin-left: 8px;
+    font-size: 16px;
+    line-height: 1;
 }
 
-
-/* Hover Effect */
 .btn:hover {
     transform: translateY(-2px);
-    /* Slight lift on hover */
     box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.3);
-    /* Enhanced shadow for effect */
 }
 
-/* Active (Clicked) State */
 .btn:active {
     transform: translateY(1px);
-    /* Button presses slightly */
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
-    /* Reduce shadow for pressed effect */
-}
-
-/* Icon-specific styling */
-.btn i {
-    font-size: 16px;
-    /* Ensure the icon size matches the text */
-    line-height: 1;
-    /* Align icon with text */
 }
 
 button {
     width: 100%;
     padding: 10px;
 }
-
 
 .header-section {
     background-color: var(--dark-color);
@@ -111,20 +85,13 @@ button {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     height: 60px;
-    /* Explicitly define header height */
 }
-
-
 
 .header-section img {
     width: 30px;
 }
 
-/*----------------------------------------------------------------
-nav bar
------------------------------------------------------------------*/
-
-/* Align the navbar content to the right */
+/* Navbar */
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -133,7 +100,6 @@ nav bar
     font-size: 15px;
 }
 
-/* Styling the nav links */
 .nav-link {
     text-decoration: none;
     margin-right: 10px;
@@ -143,17 +109,20 @@ nav bar
     color: var(--primary-color) !important;
 }
 
-/* Dropdown item hover */
 .dropdown-item:hover {
     background-color: transparent;
     color: var(--primary-color) !important;
-
 }
 
 .navbar {
-    background-color: var(--dark-color);
+    background-color: transparent; /* Fully transparent background */
     color: var(--text-color);
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a glossy effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: adds a border for a more defined look */
 }
+
 
 .navbar-toggler {
     padding: 0.25rem 0.5rem;
@@ -162,16 +131,13 @@ nav bar
     width: auto;
 }
 
-/*
----------------------------------------------------------------------------------------*/
-
+/* Contact */
 .contact {
     color: var(--dark-color);
     font-size: clamp(16px, 4vw, 32px);
     background-image: linear-gradient(to right, #ff832b, #f49f63);
     border-radius: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .contact:hover {
@@ -180,7 +146,6 @@ nav bar
     box-shadow: 1px 1px 10px 0px var(--dark-color);
     transform: scale(1.05);
 }
-/**/
 
 .contact a {
     color: var(--dark-color);
@@ -209,14 +174,10 @@ nav bar
 
 section {
     min-height: 100vh;
-    /* Ensures each section is at least the height of the viewport */
     display: flex;
-    /* Use flexbox for centering or layout */
     flex-direction: column;
-    /* Stack content vertically */
     justify-content: center;
 }
-
 
 .about-me {
     color: var(--text-color);
@@ -230,7 +191,6 @@ section {
     align-items: center;
 }
 
-
 .my-name {
     color: var(--text-color);
     height: 245px;
@@ -241,9 +201,7 @@ section {
     width: 100%;
 }
 
-.my-name h1,
-.my-name h2,
-.my-name h3 {
+.my-name h1, .my-name h2, .my-name h3 {
     color: var(--primary-color);
 }
 
@@ -271,7 +229,6 @@ section {
     background-color: var(--dark-color);
 }
 
-
 .info-section {
     display: none;
 }
@@ -279,7 +236,6 @@ section {
 .info-section.active {
     display: flex;
 }
-
 
 .info-image {
     width: 90%;
@@ -301,12 +257,7 @@ section {
     text-decoration: none;
 }
 
-
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-
-
+/* Contact Section */
 .contact-me .info-item {
     width: 100%;
     margin-bottom: 20px;
@@ -381,18 +332,12 @@ section {
     border-radius: 50px;
 }
 
-
 .contact-me .php-email-form button[type=submit]:hover {
-    /*  background: color-mix(in srgb, var(--primary-color), transparent 50%); */
     color: var(--dark-color);
     background-color: var(--primary-color);
-
 }
 
-
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
+/* Global Section Titles */
 .section {
     opacity: 0;
     transform: translateY(50px);
@@ -403,17 +348,13 @@ section {
 
 .section.visible {
     opacity: 1;
-    /* Make section fully visible */
     transform: translateY(0);
-    /* Move section to its original position */
 }
-
 
 .section-title {
     text-align: center;
     padding-bottom: 30px;
     position: relative;
-
 }
 
 .section-title h2 {
@@ -438,46 +379,38 @@ section {
     background-image: linear-gradient(to right, #ff832b, #f49f63);
 }
 
-
 .section-title p {
     margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-  # Hero Section
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# Contact Section 
---------------------------------------------------------------*/
-.abilities{
+/* Abilities Section */
+.abilities {
     max-width: 1224px;
     width: 90%;
     margin: auto;
     padding: 40px 0;
 }
 
-.photo-gallery{
+.photo-gallery {
     display: flex;
     gap: 20px;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.photo img{
+.photo img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
 }
 
-@media (max-width:768px) {
-    .photo-gallery{
+@media (max-width: 768px) {
+    .photo-gallery {
         flex-direction: column;
     }
 }
@@ -486,9 +419,6 @@ section {
     color: white;
     font-size: clamp(1.5rem, 2.5vw + 0.5rem, 4rem);
     transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.abilities i {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -499,7 +429,6 @@ section {
 .abilities .card img {
     filter: blur(3px) brightness(0.5);
     transition: all 0.3s ease-in-out;
-
 }
 
 .card:hover img {
@@ -508,28 +437,20 @@ section {
 
 #designImg {
     border-radius: 8px 8px 0 0;
-
 }
 
 #errorImg {
     border-radius: 0 0 8px 8px;
-
 }
 
 .responsive-iframe {
     position: relative;
     width: 100%;
-    /* Full width of the parent container */
     padding-top: 56.25%;
-    /* Aspect ratio: 16:9 (Height / Width * 100) */
     border-radius: 12px;
-    /* Rounded corners for the container */
     overflow: hidden;
-    /* Ensures the iframe corners are clipped */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    /* Darker drop shadow */
     background: #000;
-    /* Optional: background color while the iframe loads */
 }
 
 .responsive-iframe iframe {
@@ -537,32 +458,22 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     border: 0;
     border-radius: 12px;
-    /* Applies the rounded corners directly to the iframe */
 }
 
-/* Heading Styling */
 .info-section h3 {
     font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
-    /* Responsive font-size */
     margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
 
-
-
-/* Paragraph Styling */
 .info-section p {
     font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
-    /* Responsive text for paragraphs */
     color: #555;
     line-height: 1.6;
 }
 
-/* Info Image Styling */
 .info-section .info-image {
     width: 100%;
     border-radius: 8px;
@@ -570,71 +481,39 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Section Styling */
 .abilities h1 {
     font-size: clamp(2rem, 3vw + 1rem, 4rem);
-    /* Responsive heading for section title */
     color: #fff;
     margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
 .abilities .card-title {
     font-size: clamp(1.2rem, 2vw + 0.5rem, 2rem);
-    /* Responsive title in card */
     font-weight: 600;
 }
 
 .abilities .card-text {
     font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
-    /* Responsive text in card */
     color: #777;
     margin-top: 0.5rem;
     line-height: 1.5;
 }
 
-/* Card Styling */
 .abilities .card {
     background-color: #4d4d4d;
-    /* Lighter gray for the card */
     color: #f0f0f0;
-    /* Light text for contrast */
     border: none;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .abilities .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------------------------------
-Git
----------------------------------------------------------------------------*/
-
+/* Git Section */
 .git-section {
     align-items: center;
     color: var(--text-color);
@@ -646,29 +525,19 @@ Git
     color: var(--text-color);
 }
 
-
-.git-section hr,
-.small-intro-section hr {
+.git-section hr, .small-intro-section hr {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
 
 #myAvatar {
     font-size: clamp(100px, 10vw, 200px);
-
 }
 
 .github-link {
     display: inline-block;
-    /* Ensures the link behaves like a block element but only takes as much space as the button */
     text-decoration: none;
-    /* Removes underline */
 }
-
-
-/*-------------------------------------------------------------------------
-Git
----------------------------------------------------------------------------*/
 
 .bg-dark img {
     border-image: linear-gradient(#000, #222) 1;
@@ -694,8 +563,7 @@ Git
     box-shadow: 0 2px 3px var(--primary-color);
 }
 
-.inner-school-card,
-.inner-work-card {
+.inner-school-card, .inner-work-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -713,9 +581,7 @@ Git
     height: 200px;
     border-radius: 8px 8px 0 0;
     object-fit: cover;
-
 }
-
 
 .school-card img {
     object-fit: cover;
@@ -751,7 +617,6 @@ Git
     color: var(--primary-color);
 }
 
-
 .socials i {
     padding: 0 10px;
     color: var(--dark-color);
@@ -765,7 +630,6 @@ Git
 
 .programming-section {
     background-color: var(--dark-color);
-
 }
 
 .btn-check {
@@ -786,8 +650,7 @@ Git
     border-color: var(--primary-color);
 }
 
-.btn-outline-primary.active,
-.btn-outline-primary:focus {
+.btn-outline-primary.active, .btn-outline-primary:focus {
     background-color: var(--dark-color);
     color: white;
     border-color: var(--primary-color);
@@ -802,17 +665,609 @@ p {
     overflow-wrap: break-word;
 }
 
-
-
-.Carousel,
-.carousel-inner {
+.Carousel, .carousel-inner {
     height: 500px;
-    ;
 }
 
 .carousel-inner img {}
 
+/* Initial hidden state */
+.info-section, .card, .school-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
 
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item a {
+    font-size: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: var(--primary-color) !important;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    height: auto;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+    color: var(--dark-color);
+    font-size: clamp(16px, 4vw, 32px);
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 1px 1px 10px 0px var(--dark-color);
+    transform: scale(1.05);
+}
+
+.contact a {
+    color: var(--dark-color);
+}
+
+.myphoto {
+    border-radius: 50%;
+}
+
+.my-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    width: clamp(100px, 50vw, 200px);
+    margin-top: -100px;
+}
+
+.hero {
+    background-image: url("images/background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+    background-color: #f8f9fa;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me {
+    color: var(--text-color);
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    margin-top: 100px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    color: var(--text-color);
+    height: 245px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.my-name h1, .my-name h2, .my-name h3 {
+    color: var(--primary-color);
+}
+
+.my-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.more-info {
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.more-info h3 {
+    margin: 0;
+}
+
+.more-info:hover {
+    box-shadow: 1px 1px 3px 0px var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--dark-color);
+}
+
+.info-section {
+    display: none;
+}
+
+.info-section.active {
+    display: flex;
+}
+
+.info-image {
+    width: 90%;
+}
+
+.more-info-row h3 {
+    font-size: 3vw;
+}
+
+.btn-outline-primary {
+    font-size: 0.8rem;
+}
+
+.more-info-row a {
+    text-decoration: none;
+}
+
+.more-info-row a:hover {
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact-me .info-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 90%);
+}
+
+.contact-me .info-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-me .info-item i {
+    font-size: 20px;
+    color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact-me .info-item h3 {
+    color: var(--contrast-color);
+    font-size: 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-me .info-item:hover i {
+    background: var(--contrast-color);
+    color: var(--accent-color);
+}
+
+.contact-me .php-email-form input[type=text],
+.contact-me .php-email-form input[type=email],
+.contact-me .php-email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: var(--surface-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact-me .php-email-form input[type=text]:focus,
+.contact-me .php-email-form input[type=email]:focus,
+.contact-me .php-email-form textarea:focus {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.contact-me .php-email-form input[type=text]::placeholder,
+.contact-me .php-email-form input[type=email]::placeholder,
+.contact-me .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact-me .php-email-form button[type=submit] {
+    color: var(--text-color);
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact-me .php-email-form button[type=submit]:hover {
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+}
+
+/* Global Section Titles */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+    padding: 30px 0;
+    scroll-margin-top: 60px;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fa6901;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: auto;
+    background-image: linear-gradient(to right, #ff832b, #f49f63);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Abilities Section */
+.abilities {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+    }
+}
+
+.abilities i {
+    color: white;
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 4rem);
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.abilities h5 {
+    color: white;
+}
+
+.abilities .card img {
+    filter: blur(3px) brightness(0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover img {
+    filter: blur(0px) brightness(1);
+}
+
+#designImg {
+    border-radius: 8px 8px 0 0;
+}
+
+#errorImg {
+    border-radius: 0 0 8px 8px;
+}
+
+.responsive-iframe {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    background: #000;
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
+.info-section h3 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.info-section p {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-section .info-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.abilities h1 {
+    font-size: clamp(2rem, 3vw + 1rem, 4rem);
+    color: #fff;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.abilities .card-title {
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 2rem);
+    font-weight: 600;
+}
+
+.abilities .card-text {
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+    color: #777;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.abilities .card {
+    background-color: #4d4d4d;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.abilities .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Git Section */
+.git-section {
+    align-items: center;
+    color: var(--text-color);
+    background-color: #333333;
+    color: #f0f0f0;
+}
+
+.git-section-row {
+    color: var(--text-color);
+}
+
+.git-section hr, .small-intro-section hr {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+#myAvatar {
+    font-size: clamp(100px, 10vw, 200px);
+}
+
+.github-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bg-dark img {
+    border-image: linear-gradient(#000, #222) 1;
+    border-image-slice: 1;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.btn-card {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.btn-card:hover {
+    color: var(--text-color);
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 3px var(--primary-color);
+}
+
+.inner-school-card, .inner-work-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.inner-school-card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 0px var(--primary-color);
+}
+
+.inner-work-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 10px 0px var(--primary-color);
+}
+
+.inner-work-card img {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.school-card img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.footer-section {
+    background-color: #eaedf2;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.horizontal-list li {
+    display: inline;
+}
+
+.my-links li+li::before {
+    content: " | ";
+}
+
+.horizontal-list a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.horizontal-list a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.socials i {
+    padding: 0 10px;
+    color: var(--dark-color);
+    font-size: clamp(24px, 2vw + 4px, 30px);
+}
+
+.socials i:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.programming-section {
+    background-color: var(--dark-color);
+}
+
+.btn-check {
+    display: none;
+    border-radius: 10px;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: var(--dark-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary.active, .btn-outline-primary:focus {
+    background-color: var(--dark-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-one {
+    border-radius: 50%;
+}
+
+p {
+    font-size: clamp(12px, 2vw + 2px, 16px);
+    overflow-wrap: break-word;
+}
+
+.Carousel, .carousel-inner {
+    height: 500px;
+}
+
+.carousel-inner img {}
+
+/* Initial hidden state */
+.info-section, .card, .school-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade
 
 
 /* Initial hidden state */

@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const iframe = document.getElementById("video-frame");
   const observer = new IntersectionObserver((entries) => {
