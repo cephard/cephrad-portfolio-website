@@ -93,6 +93,8 @@ button {
     height: 60px;
 }
 
+
+
 .header-section img {
     width: 30px;
 }
@@ -266,7 +268,8 @@ section {
     text-decoration: none;
 }
 
-.more-info-row a:hover {
+.more-info-row a,
+:hover {
     text-decoration: none;
 }
 
@@ -421,6 +424,10 @@ section {
     height: auto;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.collapse link:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -628,7 +635,9 @@ section {
     color: var(--dark-color);
 }
 
-.horizontal-list a:hover {
+.horizontal-list a:hover,
+.more-info-row a:hover,
+.projects a:hover {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -864,9 +873,6 @@ section {
     text-decoration: none;
 }
 
-.more-info-row a:hover {
-    text-decoration: none;
-}
 
 /* Contact Section */
 .contact-me .info-item {
@@ -1225,10 +1231,6 @@ section {
     color: var(--dark-color);
 }
 
-.horizontal-list a:hover {
-    text-decoration: none;
-    color: var(--primary-color);
-}
 
 .socials i {
     padding: 0 10px;
