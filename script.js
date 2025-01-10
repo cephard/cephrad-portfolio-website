@@ -81,13 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".section");
 
   const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-          }
-      });
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
   }, {
-      threshold: 0.2 // Trigger when 20% of the section is visible
+    threshold: 0.2 // Trigger when 20% of the section is visible
   });
 
   sections.forEach((section) => observer.observe(section));
@@ -97,14 +97,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
 
-      window.scrollTo({
-          top: targetElement.offsetTop - document.querySelector('.header-section').offsetHeight,
-          behavior: 'smooth'
-      });
+    window.scrollTo({
+      top: targetElement.offsetTop - document.querySelector('.header-section').offsetHeight,
+      behavior: 'smooth'
+    });
   });
 });
 
+
+
+function openPdfFullscreen(event) {
+  event.preventDefault();
+
+  const pdfUrl = event.target.href;
+  const fullscreenWindow = window.open(
+    pdfUrl,
+    "_blank",
+    "toolbar=0,location=0,menubar=0,width=" + screen.width + ",height=" + screen.height
+  );
+  fullscreenWindow.moveTo(0, 0);
+}

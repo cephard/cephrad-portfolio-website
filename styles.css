@@ -16,12 +16,18 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading-color);
     font-family: var(--dark-font);
 }
@@ -115,12 +121,17 @@ button {
 }
 
 .navbar {
-    background-color: transparent; /* Fully transparent background */
+    background-color: transparent;
+    /* Fully transparent background */
     color: var(--text-color);
-    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a glossy effect */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: adds a border for a more defined look */
+    backdrop-filter: blur(10px);
+    /* Adds a blur effect to the background */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow for a glossy effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Optional: adds a border for a more defined look */
 }
 
 
@@ -201,7 +212,9 @@ section {
     width: 100%;
 }
 
-.my-name h1, .my-name h2, .my-name h3 {
+.my-name h1,
+.my-name h2,
+.my-name h3 {
     color: var(--primary-color);
 }
 
@@ -402,7 +415,8 @@ section {
     gap: 20px;
 }
 
-.photo img {
+.photo img,
+.projects img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -525,7 +539,8 @@ section {
     color: var(--text-color);
 }
 
-.git-section hr, .small-intro-section hr {
+.git-section hr,
+.small-intro-section hr {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
@@ -563,7 +578,8 @@ section {
     box-shadow: 0 2px 3px var(--primary-color);
 }
 
-.inner-school-card, .inner-work-card {
+.inner-school-card,
+.inner-work-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -650,7 +666,8 @@ section {
     border-color: var(--primary-color);
 }
 
-.btn-outline-primary.active, .btn-outline-primary:focus {
+.btn-outline-primary.active,
+.btn-outline-primary:focus {
     background-color: var(--dark-color);
     color: white;
     border-color: var(--primary-color);
@@ -665,14 +682,17 @@ p {
     overflow-wrap: break-word;
 }
 
-.Carousel, .carousel-inner {
+.Carousel,
+.carousel-inner {
     height: 500px;
 }
 
 .carousel-inner img {}
 
 /* Initial hidden state */
-.info-section, .card, .school-card {
+.info-section,
+.card,
+.school-card {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
@@ -790,7 +810,9 @@ section {
     width: 100%;
 }
 
-.my-name h1, .my-name h2, .my-name h3 {
+.my-name h1,
+.my-name h2,
+.my-name h3 {
     color: var(--primary-color);
 }
 
@@ -1114,7 +1136,8 @@ section {
     color: var(--text-color);
 }
 
-.git-section hr, .small-intro-section hr {
+.git-section hr,
+.small-intro-section hr {
     color: var(--primary-color);
     background-color: var(--primary-color);
 }
@@ -1152,7 +1175,8 @@ section {
     box-shadow: 0 2px 3px var(--primary-color);
 }
 
-.inner-school-card, .inner-work-card {
+.inner-school-card,
+.inner-work-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -1239,7 +1263,8 @@ section {
     border-color: var(--primary-color);
 }
 
-.btn-outline-primary.active, .btn-outline-primary:focus {
+.btn-outline-primary.active,
+.btn-outline-primary:focus {
     background-color: var(--dark-color);
     color: white;
     border-color: var(--primary-color);
@@ -1254,14 +1279,17 @@ p {
     overflow-wrap: break-word;
 }
 
-.Carousel, .carousel-inner {
+.Carousel,
+.carousel-inner {
     height: 500px;
 }
 
 .carousel-inner img {}
 
 /* Initial hidden state */
-.info-section, .card, .school-card {
+.info-section,
+.card,
+.school-card {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -1467,7 +1495,7 @@ ul li:nth-child(odd) .date {
     transform: translateX(30px);
 }
 
-.timeline-container i{
+.timeline-container i {
     padding-right: 5px;
 }
 
@@ -1790,7 +1818,7 @@ ul li a {
     color: var(--text-color);
 }
 
-.contact-me .info-item :hover a{
+.contact-me .info-item :hover a {
     text-decoration: none;
 }
 
