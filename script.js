@@ -121,3 +121,15 @@ function openPdfFullscreen(event) {
   );
   fullscreenWindow.moveTo(0, 0);
 }
+
+const disclaimerLink = document.getElementById('disclaimerLink');
+const disclaimerModal = document.getElementById('disclaimerModal');
+const closeModalButton = document.getElementById('closeModal');
+
+disclaimerLink.addEventListener('click', () => {
+  disclaimerModal.style.display = 'flex';
+});
+
+closeModalButton.addEventListener('click', () => {
+  disclaimerModal.style.display = 'none';
+});
