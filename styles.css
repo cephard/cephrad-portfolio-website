@@ -552,6 +552,24 @@ section {
     background-color: var(--primary-color);
 }
 
+.small-intro-section i {
+    color: var(--primary-color);
+    padding-left: 25%;
+    padding-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .intro-skills {
+        text-align: center;
+    }
+
+    .small-intro-section i {
+        padding-left: 0;
+        padding-right: 8px;
+    }
+}
+
+
 #myAvatar {
     font-size: clamp(100px, 10vw, 200px);
 }
@@ -955,13 +973,7 @@ section {
 }
 
 /* Global Section Titles */
-.section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.5s ease;
-    padding: 30px 0;
-    scroll-margin-top: 60px;
-}
+
 
 .section.visible {
     opacity: 1;
@@ -1142,11 +1154,6 @@ section {
     color: var(--text-color);
 }
 
-.git-section hr,
-.small-intro-section hr {
-    color: var(--primary-color);
-    background-color: var(--primary-color);
-}
 
 #myAvatar {
     font-size: clamp(100px, 10vw, 200px);

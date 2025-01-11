@@ -48,7 +48,7 @@
 							<a class="nav-link" href="#me">About Me </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#me">Projects</a>
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#work">Work</a>
@@ -117,7 +117,7 @@
 	</div>
 
 
-	<section id="me" class="small-intro-section section">
+	<section id="me" class="small-intro-section section" style="background-color: #f5f5f5;">
 		<!-- Section Title -->
 		<div class="container section-title" data-aos="fade-up">
 			<h2 class="head">Who am I?</h2>
@@ -125,197 +125,232 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 pb-4 badge-base LI-profile-badge d-flex justify-content-center" data-locale="en_US"
+				<div class="col-lg-6 badge-base LI-profile-badge d-flex justify-content-center" data-locale="en_US"
 					data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="cephard-kipkemboi"
 					data-version="v1"><a class="badge-base__link LI-simple-link"
 						href="https://uk.linkedin.com/in/cephard-kipkemboi?trk=profile-badge"></a>
 				</div>
 
 				<div class="col-lg-6">
-					<p>A recent master's graduate passionate about building scalable enterprise applications through
-						object-oriented programming. I enjoy tackling real-world problems with thoughtful, efficient
-						solutions.</p>
-					<p>I value both productive solitude and the power of teamwork, collaborating with others to achieve
-						shared goals.</p>
-					<p>Though new to this field, I’ve gained hands-on experience with various solo projects.</p>
-					<button class="btn">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+					<h2>About Me</h2>
+					<p>
+						I’m a driven software engineer passionate about crafting efficient, secure, and scalable
+						applications. With expertise in modern technologies like Java, C#, .NET, and SQL, I enjoy
+						solving technical challenges and delivering impactful solutions that prioritize user needs.
+					</p>
+					<p>
+						Committed to continuous growth, I embrace learning opportunities and thrive in both independent
+						and collaborative environments.
+					</p>
+
+					<!--<button class="btn">Read More <i class="fa-solid fa-arrow-right-long"></i></button>-->
 				</div>
 			</div>
 			<hr>
+			<div class="row d-flex align-items-center justify-content-center intro-skills">
+				<div class="col-lg-6">
+					<p><i class="fas fa-comments"></i> Effective communicator</p>
+					<p><i class="fas fa-lightbulb"></i> Problem-solver</p>
+					<p><i class="fas fa-users"></i> Team collaborator</p>
+					<p><i class="fas fa-arrows-alt"></i> Adaptabile</p>
+					<p><i class="fas fa-clock"></i> Time managemer</p>
+					<hr>
+				</div>
+				<div class="col-lg-6">
+					<p><i class="fas fa-code"></i> Proficient in Java, C#, .NET, SQL</p>
+					<p><i class="fas fa-code-branch"></i> Version control with Git</p>
+					<p><i class="fas fa-check-double"></i> Test-driven development (TDD)</p>
+					<p><i class="fas fa-box"></i> Microservices and containerization</p>
+					<p><i class="fas fa-bug"></i> Debugging and code optimization</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			<div class="container section-title" data-aos="fade-up">
-				<h2 class="head">Projects</h2>
-			</div><!-- End Section Title -->
 
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<h5 class="mb-0">
-							<button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
-								aria-expanded="true" aria-controls="collapseOne">
-								Tag Team Educational Game
-							</button>
-						</h5>
-					</div>
+	<section id="projects" class="projects-section section container">
+		<div class="container section-title" data-aos="fade-up">
+			<h2 class="head">Projects</h2>
+		</div><!-- End Section Title -->
 
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row projects">
-								<div class="col-lg-6">
-									<img src="images/Tag Team.png" alt="">
+		<div class="accordion" id="accordionExample">
+			<div class="card">
+				<div class="card-header" id="headingOne">
+					<h5 class="mb-0">
+						<button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+							aria-expanded="true" aria-controls="collapseOne">
+							Tag Team Educational Game
+						</button>
+					</h5>
+				</div>
+
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+					data-parent="#accordionExample">
+					<div class="card-body">
+						<div class="row projects">
+							<div class="col-lg-6">
+								<img src="images/Tag Team.png" alt="">
+
+							</div>
+							<div class="col-lg-6">
+								<p>
+
+								</p>
+								<div>
+									<a
+										href="https://play.unity.com/en/games/e6bea1de-9ef3-4f88-9200-3c80a010d474/tag-team-beta-version">Play</a>
+									| <a href="https://cephard.github.io/Tag-Team-Documentation/">Documentation</a>
+									| <a href="https://github.com/cephard/TagTeam.git">Github Link</a> |
+
+									<a href="Documents/Game Design for Undergraduate Students.pdf"
+										onclick="openPdfFullscreen(event)">Read Dissertation</a>
+
 
 								</div>
-								<div class="col-lg-6">
-									<p>
 
-									</p>
-									<div>
-										<a
-											href="https://play.unity.com/en/games/e6bea1de-9ef3-4f88-9200-3c80a010d474/tag-team-beta-version">Play</a>
-										| <a href="https://cephard.github.io/Tag-Team-Documentation/">Documentation</a>
-										| <a href="https://github.com/cephard/TagTeam.git">Github Link</a> |
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+					<h5 class="mb-0">
+						<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+							aria-expanded="false" aria-controls="collapseTwo">
+							Kips Communication Website
+						</button>
+					</h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					<div class="card-body">
+						<div class="row projects">
+							<div class="col-lg-6">
+								<img src="images/Kipscommwebsite.webp.png" alt="">
+							</div>
+							<div class="col-lg-6">
+								<p>
 
-										<a href="Documents/Game Design for Undergraduate Students.pdf"
-											onclick="openPdfFullscreen(event)">Read Dissertation</a>
-
-
-									</div>
-
+								</p>
+								<div>
+									<a href="https://kipscommunication.co.ke/">Visit</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<h5 class="mb-0">
-							<button class="btn collapsed" type="button" data-toggle="collapse"
-								data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Kips Communication Website
-							</button>
-						</h5>
-					</div>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row projects">
-								<div class="col-lg-6">
-									<img src="images/Kipscommwebsite.webp.png" alt="">
-								</div>
-								<div class="col-lg-6">
-									<p>
+			</div>
 
-									</p>
-									<div>
-										<a href="https://kipscommunication.co.ke/">Visit</a>
-									</div>
+			<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+							aria-expanded="false" aria-controls="collapseThree">
+							Cafe Management System
+						</button>
+					</h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body">
+						<div class="row projects">
+							<div class="col-lg-6">
+								<img src="images/background1.png" alt="">
+							</div>
+							<div class="col-lg-6">
+								<p>Learning how to work as part of a team is fundamental in the software
+									engineering career. With this project, I got to work as part of an Agile
+									Scrum
+									team where we were required to change system .... into functionalities. This
+									project stands as a testament to this.</p>
+								<p>
+									Disclaimer: <span id="disclaimerLink"
+										style="color: blue; text-decoration: underline; cursor: pointer;">Click
+										here
+										for disclaimer details</span>
+								</p>
+								<div>Checkout the co-creators: <a
+										href="https://github.com/kiransahukar/kiransahukar">Kiran Kumar</a>
+								</div>
+								<div>
+									<a href="https://cephard.github.io/Cafe-Management-Documentation/">Javadoc</a>
+									|
+									<a href="">Github Link</a> | <a href="">Download .jar</a> | <a href="">Download
+										.exe</a>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h5 class="mb-0">
-							<button class="btn collapsed" type="button" data-toggle="collapse"
-								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Cafe Management System
-							</button>
-						</h5>
-					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row projects">
-								<div class="col-lg-6">
-									<img src="images/background1.png" alt="">
-								</div>
-								<div class="col-lg-6">
-									<p>Learning how to work as part of a team is fundamental in the software
-										engineering career. With this project, I got to work as part of an Agile Scrum
-										team where we were required to change system .... into functionalities. This
-										project stands as a testament to this.</p>
-									<p>
-										Disclaimer: <span id="disclaimerLink"
-											style="color: blue; text-decoration: underline; cursor: pointer;">Click here
-											for disclaimer details</span>
-									</p>
-									<div>Checkout the co-creators: <a
-											href="https://github.com/kiransahukar/kiransahukar">Kiran Kumar</a></div>
-									<div>
-										<a href="https://cephard.github.io/Cafe-Management-Documentation/">Javadoc</a> |
-										<a href="">Github Link</a> | <a href="">Download .jar</a> | <a href="">Download
-											.exe</a>
-									</div>
-								</div>
-
-								<!-- Modal -->
-								<div id="disclaimerModal" style="display:none;">
+							<!-- Modal -->
+							<div id="disclaimerModal" style="display:none;">
+								<div
+									style="position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center;">
 									<div
-										style="position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center;">
-										<div
-											style="background-color:white; padding:20px; border-radius:8px; width:80%; max-width:600px;">
-											<p>Disclaimer: The github repository to the app is a re-imagination using
-												some slight variations.
-												Due to copyright and team agreements, the original repository remains
-												private to the two main
-												contributors with a bounding agreement. <a
-													href="https://github.com/kiransahukar">Kiran Kumar</a>
-												and <a href="https://github.com/cephard">Cephard Kipkemboi</a>
-											</p>
-											<button id="closeModal">Close</button>
-										</div>
+										style="background-color:white; padding:20px; border-radius:8px; width:80%; max-width:600px;">
+										<p>Disclaimer: The github repository to the app is a re-imagination
+											using
+											some slight variations.
+											Due to copyright and team agreements, the original repository
+											remains
+											private to the two main
+											contributors with a bounding agreement. <a
+												href="https://github.com/kiransahukar">Kiran Kumar</a>
+											and <a href="https://github.com/cephard">Cephard Kipkemboi</a>
+										</p>
+										<button id="closeModal">Close</button>
 									</div>
 								</div>
-
-
 							</div>
+
+
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h5 class="mb-0">
-							<button class="btn collapsed" type="button" data-toggle="collapse"
-								data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								In Home Agent Short Paper
-							</button>
-						</h5>
-					</div>
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row projects">
-								<div class="col-lg-6">
-									<img src="images/Inhome agent.webp" alt="">
-								</div>
-								<div class="col-lg-6">
-									<h3> ABSTRACT</h3>
-									<p>
-										Conversational agents have widely been accepted for our day-to-day use. While
-										the growth has been widely accepted, this study finds
-										the need to improve the interaction between this agent and human beings through
-										emotional intelligence. Previous research has found
-										that most users are enthusiastic about the new gadget but seem to find it boring
-										later.
-									</p>
-									<p>Emotional prosody and anthropomorphism have
-										played a big role in this result and need to be improved. This study considers
-										"Shneiderman’s Golden Rules of Design" to produce a novel conversational agent
-										that conforms to
-										<a href="Documents/Humanising_in-home_Conversational_Agents.pdf"
-											onclick="openPdfFullscreen(event)">Read Paper</a>
-									</p>
-								</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+							aria-expanded="false" aria-controls="collapseFour">
+							In Home Agent Short Paper
+						</button>
+					</h5>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					<div class="card-body">
+						<div class="row projects">
+							<div class="col-lg-6">
+								<img src="images/Inhome agent.webp" alt="">
+							</div>
+							<div class="col-lg-6">
+								<h3> ABSTRACT</h3>
+								<p>
+									Conversational agents have widely been accepted for our day-to-day use.
+									While
+									the growth has been widely accepted, this study finds
+									the need to improve the interaction between this agent and human beings
+									through
+									emotional intelligence. Previous research has found
+									that most users are enthusiastic about the new gadget but seem to find it
+									boring
+									later.
+								</p>
+								<p>Emotional prosody and anthropomorphism have
+									played a big role in this result and need to be improved. This study
+									considers
+									"Shneiderman’s Golden Rules of Design" to produce a novel conversational
+									agent
+									that conforms to
+									<a href="Documents/Humanising_in-home_Conversational_Agents.pdf"
+										onclick="openPdfFullscreen(event)">Read Paper</a>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</section>
+
 
 
 
